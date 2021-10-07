@@ -1,0 +1,16 @@
+uuid: 2a12c6a3-733d-40c2-9c43-bea096f99fab
+langcode: en
+status: true
+dependencies: {  }
+id: client
+label: Client
+weight: 5
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'create article content'
+  - 'create page content'
+  - 'delete own article content'
+  - 'delete own page content'
+  - 'edit own article content'
+  - 'edit own page content'
