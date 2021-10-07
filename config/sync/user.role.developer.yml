@@ -1,0 +1,51 @@
+uuid: 5f14e475-b5dd-45f8-8af5-c73be135e1f9
+langcode: en
+status: true
+dependencies: {  }
+id: developer
+label: Developer
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer contact forms'
+  - 'administer content types'
+  - 'administer menu'
+  - 'administer modules'
+  - 'administer nodes'
+  - 'administer search'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer taxonomy'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create page content'
+  - 'create terms in tags'
+  - 'delete all revisions'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'delete terms in tags'
+  - 'edit any article content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own page content'
+  - 'edit terms in tags'
+  - 'export configuration'
+  - 'import configuration'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert page revisions'
+  - 'synchronize configuration'
+  - 'use text format full_html'
+  - 'view all revisions'
+  - 'view article revisions'
+  - 'view page revisions'
+  - 'view the administration theme'

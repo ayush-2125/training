@@ -1,0 +1,14 @@
+uuid: d0577e32-6cb5-436e-b952-8bdf04fc318e
+langcode: en
+status: true
+dependencies: {  }
+id: manager
+label: Manager
+weight: 3
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'administer users'
+  - 'assign client role'
+  - 'assign developer role'
+  - 'view user email addresses'
