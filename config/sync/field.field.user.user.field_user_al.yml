@@ -1,0 +1,20 @@
+uuid: b02c1fec-e524-4502-9d99-ad5c4dd316ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_al
+  module:
+    - user
+id: user.user.field_user_al
+field_name: field_user_al
+entity_type: user
+bundle: user
+label: 'User Alternate Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email
