@@ -1,0 +1,35 @@
+uuid: 7e09690b-52ba-4e6b-93ca-bc31e5718f9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_reference
+  module:
+    - user
+id: user.user.field_user_reference
+field_name: field_user_reference
+entity_type: user
+bundle: user
+label: 'User Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        manager: manager
+        administrator: '0'
+        developer: '0'
+        client: '0'
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference
