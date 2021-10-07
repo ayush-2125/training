@@ -22,6 +22,9 @@
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
+
+        "drupal/pathauto": "^1.8"
+
         "drupal/role_delegation": "^1.1"
         "drupal/devel": "^4.1",
         "drupal/paragraphs": "^1.12",
