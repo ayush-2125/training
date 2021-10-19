@@ -1,0 +1,22 @@
+uuid: b75745fa-1943-4fb7-a98b-7e29e5ba2ffa
+langcode: en
+status: true
+dependencies:
+  theme:
+    - suboot
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: suboot_local_tasks
+theme: suboot
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 80344c21-96e9-4d89-a375-02f61aa5199d
+langcode: en
+status: true
+dependencies: {  }
+id: user-menu
+label: 'User Menu'
+description: ''
+locked: false
