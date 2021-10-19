@@ -1,0 +1,22 @@
+uuid: d5f05087-9068-4040-b8b7-8aeee020a101
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - suboot
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: suboot_help
+theme: suboot
+region: help
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

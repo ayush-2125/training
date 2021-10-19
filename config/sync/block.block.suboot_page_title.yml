@@ -1,0 +1,20 @@
+uuid: ce26e8d1-2be0-4d99-a16b-cbe9bd3ffdfe
+langcode: en
+status: true
+dependencies:
+  theme:
+    - suboot
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: suboot_page_title
+theme: suboot
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

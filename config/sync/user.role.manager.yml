@@ -8,6 +8,7 @@ weight: 3
 is_admin: null
 permissions:
   - 'access toolbar'
+  - 'access user profiles'
   - 'administer users'
   - 'assign client role'
   - 'assign developer role'

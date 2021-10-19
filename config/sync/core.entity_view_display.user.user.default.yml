@@ -5,9 +5,9 @@ dependencies:
   config:
     - field.field.user.user.field_user_address
     - field.field.user.user.field_user_al
-    - field.field.user.user.field_user_contact_number
     - field.field.user.user.field_user_date_of_birth
     - field.field.user.user.field_user_description
+    - field.field.user.user.field_user_phone
     - field.field.user.user.field_user_reference
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -15,6 +15,7 @@ dependencies:
     - address
     - datetime
     - image
+    - telephone
     - user
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
@@ -31,20 +32,11 @@ content:
     type: address_default
     region: content
   field_user_al:
-    weight: 4
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: content
-  field_user_contact_number:
-    weight: 3
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
     region: content
   field_user_date_of_birth:
     weight: 5
@@ -61,6 +53,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: basic_string
+    region: content
+  field_user_phone:
+    weight: 4
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
     region: content
   field_user_reference:
     weight: 7
