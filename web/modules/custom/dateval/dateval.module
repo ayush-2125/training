@@ -1,0 +1,12 @@
+<?php
+ 
+use Drupal\Core\Entity\EntityTypeInterface;
+ 
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function dateval_entity_bundle_field_info_alter(&$fields, EntityTypeInterface $entity_type, $bundle) {
+  if (!empty($fields['field_project_end_date'])) {
+    $fields['field_project_end_date']->addConstraint('StartEndDateChecking');
+  }
+}
