@@ -1,0 +1,20 @@
+uuid: 57c3c904-e930-4728-a548-2be78207dcc2
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_project_recievables
+field_name: field_project_recievables
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

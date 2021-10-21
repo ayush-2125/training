@@ -1,0 +1,19 @@
+uuid: a700d870-8c90-4481-82aa-17bf190010c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_title
+    - node.type.project
+id: node.project.field_project_title
+field_name: field_project_title
+entity_type: node
+bundle: project
+label: 'Project Title'
+description: 'Enter Project Title'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

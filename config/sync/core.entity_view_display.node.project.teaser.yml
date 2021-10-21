@@ -1,0 +1,40 @@
+uuid: 47e6e168-c805-48d0-a517-44d1b25eb5c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_product_client
+    - field.field.node.project.field_product_owner
+    - field.field.node.project.field_project_banner
+    - field.field.node.project.field_project_banner_caption
+    - field.field.node.project.field_project_description
+    - field.field.node.project.field_project_end_date
+    - field.field.node.project.field_project_gallery
+    - field.field.node.project.field_project_recievables
+    - field.field.node.project.field_project_start_date
+    - field.field.node.project.field_project_title
+    - node.type.project
+  module:
+    - user
+id: node.project.teaser
+targetEntityType: node
+bundle: project
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_product_client: true
+  field_product_owner: true
+  field_project_banner: true
+  field_project_banner_caption: true
+  field_project_description: true
+  field_project_end_date: true
+  field_project_gallery: true
+  field_project_recievables: true
+  field_project_start_date: true
+  field_project_title: true

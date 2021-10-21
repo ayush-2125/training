@@ -296,6 +296,9 @@ display:
     display_options:
       path: node
       display_extenders: {  }
+      defaults:
+        style: true
+        row: true
     display_plugin: page
     display_title: Page
     id: page_1
