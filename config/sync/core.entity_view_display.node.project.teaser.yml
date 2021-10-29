@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.project.feeds_item
     - field.field.node.project.field_product_client
     - field.field.node.project.field_product_owner
     - field.field.node.project.field_project_banner
@@ -28,6 +29,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  feeds_item: true
   field_product_client: true
   field_product_owner: true
   field_project_banner: true
