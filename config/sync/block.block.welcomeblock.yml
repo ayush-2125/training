@@ -1,0 +1,25 @@
+uuid: eebe6208-496a-4817-a80e-78f2ffe53be4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - welcome_block
+  theme:
+    - suboot
+id: welcomeblock
+theme: suboot
+region: content
+weight: -7
+provider: null
+plugin: welcome_block
+settings:
+  id: welcome_block
+  label: 'Welcome block'
+  provider: welcome_block
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

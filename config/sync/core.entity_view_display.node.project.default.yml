@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.project.feeds_item
     - field.field.node.project.field_product_client
     - field.field.node.project.field_product_owner
     - field.field.node.project.field_project_banner
@@ -111,4 +112,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  feeds_item: true

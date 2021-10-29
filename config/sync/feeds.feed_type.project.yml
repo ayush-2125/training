@@ -1,0 +1,110 @@
+uuid: f02aa1bc-cc02-43d2-bcf3-1adae800220f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.field_product_client
+    - field.field.node.project.field_product_owner
+    - field.field.node.project.field_project_description
+    - field.field.node.project.field_project_end_date
+    - field.field.node.project.field_project_start_date
+    - node.type.project
+  module:
+    - node
+id: project
+label: Project
+description: 'Import Project'
+help: ''
+import_period: 1800
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  langcode: en
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: project
+custom_sources:
+  title:
+    label: title
+    value: title
+    machine_name: title
+  description:
+    label: description
+    value: description
+    machine_name: description
+  client:
+    label: client
+    value: client
+    machine_name: client
+  productowner:
+    label: productowner
+    value: productowner
+    machine_name: productowner
+  startdate:
+    label: startdate
+    value: startdate
+    machine_name: startdate
+  enddate:
+    label: enddate
+    value: enddate
+    machine_name: enddate
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: field_project_description
+    map:
+      value: description
+    settings:
+      language: null
+  -
+    target: field_product_client
+    map:
+      target_id: client
+    settings:
+      language: null
+      reference_by: false
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_product_owner
+    map:
+      target_id: productowner
+    settings:
+      language: null
+      reference_by: false
+      autocreate: false
+      feeds_item: false
+  -
+    target: field_project_start_date
+    map:
+      value: startdate
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_project_end_date
+    map:
+      value: enddate
+    settings:
+      language: null
+      timezone: UTC

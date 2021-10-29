@@ -1,0 +1,45 @@
+entity_types:
+  block_content:
+    enable: 1
+    limit_per_bundle: {  }
+  comment:
+    enable: 1
+    limit_per_bundle: {  }
+  contact_message:
+    enable: 1
+    limit_per_bundle: {  }
+  feeds_subscription:
+    enable: 1
+    limit_per_bundle: {  }
+  feeds_feed:
+    enable: 1
+    limit_per_bundle: {  }
+  file:
+    enable: 1
+    limit_per_bundle: {  }
+  media:
+    enable: 1
+    limit_per_bundle: {  }
+  menu_link_content:
+    enable: 1
+    limit_per_bundle: {  }
+  node:
+    enable: 1
+    limit_per_bundle: {  }
+  path_alias:
+    enable: 1
+    limit_per_bundle: {  }
+  shortcut:
+    enable: 1
+    limit_per_bundle: {  }
+  taxonomy_term:
+    enable: 1
+    limit_per_bundle: {  }
+  user:
+    enable: 1
+    limit_per_bundle: {  }
+  paragraph:
+    enable: 1
+    limit_per_bundle: {  }
+multiple:
+  columns: '10'
