@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.field.node.project.field_product_client
     - field.field.node.project.field_product_owner
-    - field.field.node.project.field_project_description
-    - field.field.node.project.field_project_end_date
     - field.field.node.project.field_project_start_date
     - node.type.project
   module:
@@ -68,12 +66,6 @@ mappings:
     map:
       value: title
     unique: {  }
-    settings:
-      language: null
-  -
-    target: field_project_description
-    map:
-      value: description
     settings:
       language: null
   -

@@ -12,7 +12,6 @@ dependencies:
     - field.field.user.user.field_user_phone
     - field.field.user.user.field_user_reference
     - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
     - address
     - datetime
@@ -103,7 +102,7 @@ content:
     type: image_image
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: ''
     third_party_settings: {  }
     weight: 5
     region: content

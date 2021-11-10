@@ -18,6 +18,7 @@ dependencies:
   module:
     - datetime
     - media_library
+    - text
 id: node.project.default
 targetEntityType: node
 bundle: project
@@ -64,7 +65,7 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
     region: content
   field_project_end_date:
     weight: 7

@@ -1,22 +1,24 @@
-uuid: 0b4a3e4b-0ed0-4f9a-8823-712659d09e9d
+uuid: cff9647d-f971-4861-a94e-b0e0c5d3e523
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
   theme:
     - suboot
-_core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: suboot_content
+id: mainpagecontent
 theme: suboot
 region: content
-weight: -6
+weight: -5
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
   label: 'Main page content'
   provider: system
-  label_display: '0'
-visibility: {  }
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

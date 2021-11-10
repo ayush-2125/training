@@ -11,5 +11,11 @@ definitions:
     weight: -10
     expanded: false
     enabled: true
+  standard__front_page:
+    menu_name: main
+    parent: ''
+    weight: 0
+    expanded: true
+    enabled: true
 _core:
   default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
