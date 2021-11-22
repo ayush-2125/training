@@ -1,4 +1,4 @@
-uuid: dab2e52d-bf56-4544-8f3e-789142445bb1
+uuid: c0d5b668-4590-4792-a1a5-25dab6550300
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,8 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: suboot_main_menu
 theme: suboot
-region: navigation
-weight: -7
+region: nav_main
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

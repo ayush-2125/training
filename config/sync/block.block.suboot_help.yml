@@ -1,4 +1,4 @@
-uuid: d5f05087-9068-4040-b8b7-8aeee020a101
+uuid: c2b1f5cc-6336-4a9d-ada7-3f343601c8d8
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
 id: suboot_help
 theme: suboot
-region: help
-weight: -7
+region: content
+weight: -4
 provider: null
 plugin: help_block
 settings:

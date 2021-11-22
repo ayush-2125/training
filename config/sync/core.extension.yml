@@ -19,6 +19,7 @@ module:
   contextual: 0
   ctools: 0
   datetime: 0
+  datetime_range: 0
   dateval: 0
   dblog: 0
   dynamic_page_cache: 0
@@ -60,7 +61,11 @@ module:
   tour: 0
   update: 0
   user: 0
+  views_infinite_scroll: 0
   views_ui: 0
+  votingapi: 0
+  votingapi_reaction: 0
+  votingapi_tokens: 0
   welcome_block: 0
   pathauto: 1
   views: 10
@@ -70,6 +75,9 @@ theme:
   bartik: 0
   seven: 0
   bootstrap: 0
+  stable: 0
+  classy: 0
+  bootstrap5: 0
   suboot: 0
 profile: standard
 _core:

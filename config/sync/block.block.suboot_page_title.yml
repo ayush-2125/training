@@ -1,4 +1,4 @@
-uuid: ce26e8d1-2be0-4d99-a16b-cbe9bd3ffdfe
+uuid: 30b7ec18-d0ff-4950-9aef-afa5428c9ee4
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: suboot_page_title
 theme: suboot
 region: content
-weight: -8
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

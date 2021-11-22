@@ -1,4 +1,4 @@
-uuid: ca77830b-8299-4a0d-9ba5-7519bf4e8075
+uuid: 57a5577e-0b02-4f63-aa9c-c55b4f13ddde
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
 id: suboot_branding
 theme: suboot
-region: navigation
-weight: -8
+region: nav_branding
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

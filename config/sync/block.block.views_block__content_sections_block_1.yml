@@ -1,4 +1,4 @@
-uuid: 7fa919e9-58fc-4435-bc8b-7c5448daa8d8
+uuid: ee3c71dd-957b-494a-8191-460a8c86161d
 langcode: en
 status: true
 dependencies:
@@ -12,14 +12,14 @@ dependencies:
 id: views_block__content_sections_block_1
 theme: suboot
 region: content
-weight: -6
+weight: -2
 provider: null
 plugin: 'views_block:content_sections-block_1'
 settings:
   id: 'views_block:content_sections-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:

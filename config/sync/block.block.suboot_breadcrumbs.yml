@@ -1,4 +1,4 @@
-uuid: 5b6a71b9-ae02-44e3-9cc6-fac9ed186e88
+uuid: 26043e08-ef4e-4c6d-ae5f-8197db31e511
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: suboot_breadcrumbs
 theme: suboot
-region: header
-weight: -9
+region: breadcrumb
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:

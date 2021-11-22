@@ -1,0 +1,21 @@
+uuid: ebb5f269-4f4b-4d75-b54c-6a477e6c236e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_date
+    - node.type.tasks
+  module:
+    - datetime_range
+id: node.tasks.field_task_date
+field_name: field_task_date
+entity_type: node
+bundle: tasks
+label: 'Project Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

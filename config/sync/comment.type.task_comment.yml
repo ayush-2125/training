@@ -1,0 +1,8 @@
+uuid: 16106bab-7cc4-448a-889c-7ebacc44e46f
+langcode: en
+status: true
+dependencies: {  }
+id: task_comment
+label: 'Task Comment'
+target_entity_type_id: node
+description: ''

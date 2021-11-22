@@ -20,6 +20,8 @@
 #}
 <article{{ attributes }}>
 </article>
+{% set url = url('<current>') %}
+{% if '/profile/' in url|render|render %}
   <div class="container">
     <div class="row gutters-sm">
       <div class="col-md-4 mb-3">
@@ -97,3 +99,4 @@
       </div>
     </div>
   </div>
+  {% endif %}

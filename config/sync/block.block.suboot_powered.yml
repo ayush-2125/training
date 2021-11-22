@@ -1,4 +1,4 @@
-uuid: 31a3af4b-28c3-42c2-a2b2-be614ffac050
+uuid: 99948d42-0e9a-4fae-b95d-b684c324badb
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: suboot_powered
 theme: suboot
 region: footer
-weight: -6
+weight: -5
 provider: null
 plugin: system_powered_by_block
 settings:

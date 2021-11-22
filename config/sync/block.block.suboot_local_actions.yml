@@ -1,4 +1,4 @@
-uuid: a11ca061-46b8-4b86-a165-49c9394c4a80
+uuid: 09108e2e-20b0-450f-9149-30be679556a9
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,8 @@ _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
 id: suboot_local_actions
 theme: suboot
-region: header
-weight: -6
+region: content
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:

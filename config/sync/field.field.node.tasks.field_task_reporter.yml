@@ -1,0 +1,29 @@
+uuid: c58e0a33-2488-41db-b49f-e61abb3094f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_reporter
+    - node.type.tasks
+id: node.tasks.field_task_reporter
+field_name: field_task_reporter
+entity_type: node
+bundle: tasks
+label: Reporter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference
