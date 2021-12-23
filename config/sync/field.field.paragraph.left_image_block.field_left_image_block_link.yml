@@ -1,0 +1,23 @@
+uuid: c89170f8-83a5-43bd-9c4c-2c2cfcd8eb64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_left_image_block_link
+    - paragraphs.paragraphs_type.left_image_block
+  module:
+    - link
+id: paragraph.left_image_block.field_left_image_block_link
+field_name: field_left_image_block_link
+entity_type: paragraph
+bundle: left_image_block
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

@@ -1,0 +1,19 @@
+uuid: f3374680-79f2-487e-90f9-3fd8b3a07ebf
+langcode: en
+status: true
+dependencies:
+  module:
+    - temp_mod
+_core:
+  default_config_hash: T0m5-KFM9Fvlyf-kkRnIo-wsGY6_FlhwRKL96HfgGnk
+title: 'Temm mod Worker'
+id: temp_queue_worker
+weight: 0
+module: temp_mod
+callback: temp_mod_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

@@ -1,0 +1,29 @@
+uuid: 5f844e74-9a45-4365-b5fa-afb99497c38d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_front_page_block_1_image
+    - media.type.image
+    - paragraphs.paragraphs_type.front_page_3_blocks
+id: paragraph.front_page_3_blocks.field_front_page_block_1_image
+field_name: field_front_page_block_1_image
+entity_type: paragraph
+bundle: front_page_3_blocks
+label: 'Block 1 Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,95 @@
+uuid: 75901c04-56c6-4997-a3bd-d1b74a497614
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_1_descrip
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_1_image
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_1_title
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_2_descrip
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_2_image
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_2_title
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_3_descrip
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_3_image
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_3_title
+    - paragraphs.paragraphs_type.front_page_3_blocks
+  module:
+    - media_library
+    - text
+id: paragraph.front_page_3_blocks.default
+targetEntityType: paragraph
+bundle: front_page_3_blocks
+mode: default
+content:
+  field_front_page_block_1_descrip:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_front_page_block_1_image:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_front_page_block_1_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_front_page_block_2_descrip:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_front_page_block_2_image:
+    type: media_library_widget
+    weight: 5
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_front_page_block_2_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_front_page_block_3_descrip:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_front_page_block_3_image:
+    type: media_library_widget
+    weight: 8
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_front_page_block_3_title:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

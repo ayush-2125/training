@@ -1,0 +1,63 @@
+uuid: fba54b33-4756-4da6-aa13-4c30e70296f4
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.front_page.field_contact
+    - field.field.node.front_page.field_faq_section
+    - field.field.node.front_page.field_left_image_block
+    - field.field.node.front_page.field_top_blocks
+    - field.field.node.front_page.field_top_section
+    - node.type.front_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.front_page.full
+targetEntityType: node
+bundle: front_page
+mode: full
+content:
+  field_contact:
+    type: entity_reference_revisions_entity_view
+    weight: 105
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_left_image_block:
+    type: entity_reference_revisions_entity_view
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_top_blocks:
+    type: entity_reference_revisions_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_top_section:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_faq_section: true

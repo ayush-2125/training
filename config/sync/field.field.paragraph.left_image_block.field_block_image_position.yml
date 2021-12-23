@@ -1,0 +1,21 @@
+uuid: 9bcf5dbc-52c6-45c6-b395-5bce4a60813c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_image_position
+    - paragraphs.paragraphs_type.left_image_block
+  module:
+    - options
+id: paragraph.left_image_block.field_block_image_position
+field_name: field_block_image_position
+entity_type: paragraph
+bundle: left_image_block
+label: 'Image Position'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

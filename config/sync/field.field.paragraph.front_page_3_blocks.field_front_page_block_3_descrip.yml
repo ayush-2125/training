@@ -1,0 +1,21 @@
+uuid: 1509ddd2-3c91-43f0-b9f9-3168236bbc60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_front_page_block_3_descrip
+    - paragraphs.paragraphs_type.front_page_3_blocks
+  module:
+    - text
+id: paragraph.front_page_3_blocks.field_front_page_block_3_descrip
+field_name: field_front_page_block_3_descrip
+entity_type: paragraph
+bundle: front_page_3_blocks
+label: 'Block 3 Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

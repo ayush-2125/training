@@ -1,0 +1,21 @@
+uuid: 9cbeecd3-9ef9-4004-aaf8-66c33d8ce7a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_layout_description
+    - paragraphs.paragraphs_type.contact_layout
+  module:
+    - text
+id: paragraph.contact_layout.field_contact_layout_description
+field_name: field_contact_layout_description
+entity_type: paragraph
+bundle: contact_layout
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

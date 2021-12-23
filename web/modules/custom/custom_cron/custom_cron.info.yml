@@ -1,0 +1,5 @@
+name: Custom Cron
+type: module
+description: Custom cron for emails
+core_version_requirement: ^8.8 || ^9
+package: custom

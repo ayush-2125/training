@@ -1,0 +1,25 @@
+<?php
+
+/**
+* Implements hook_mail().
+*/
+function custom_cron_mail($key, &$message, $params) {
+    $options = array(
+      'langcode' => $message['langcode'],
+    );
+    switch ($key) {
+      case 'project_delete':
+        $message['from'] = \Drupal::config('system.site')->get('mail');
+        $message['subject'] = t('Project Unpublished');
+        $message['body'][] = t('Project Deleted:' ($unpublished), 'Tasks Affected :' ($unpublishedTasks));
+        break;
+    }
+   }
+
+
+   function hook_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+   if($form_id =='node-project-form'){
+    print_r($form);
+    dump();
+   }
+   }

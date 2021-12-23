@@ -1,0 +1,95 @@
+uuid: bf043ad4-dd16-4754-b34f-118bf328f583
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_1_descrip
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_1_image
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_1_title
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_2_descrip
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_2_image
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_2_title
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_3_descrip
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_3_image
+    - field.field.paragraph.front_page_3_blocks.field_front_page_block_3_title
+    - paragraphs.paragraphs_type.front_page_3_blocks
+  module:
+    - text
+id: paragraph.front_page_3_blocks.default
+targetEntityType: paragraph
+bundle: front_page_3_blocks
+mode: default
+content:
+  field_front_page_block_1_descrip:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_front_page_block_1_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_front_page_block_1_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_front_page_block_2_descrip:
+    weight: 10
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_front_page_block_2_image:
+    type: entity_reference_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_front_page_block_2_title:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_front_page_block_3_descrip:
+    weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_front_page_block_3_image:
+    type: entity_reference_entity_view
+    weight: 8
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_front_page_block_3_title:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

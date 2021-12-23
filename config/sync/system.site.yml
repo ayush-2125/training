@@ -1,11 +1,11 @@
 uuid: 4f756916-ec3c-4b6e-94ca-1cce0e038bcc
-name: Training
+name: Tucksy
 mail: ayush.pandey@srijan.net
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/101
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
