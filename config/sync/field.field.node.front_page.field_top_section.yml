@@ -21,9 +21,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       top_section: top_section
+    negate: 0
     target_bundles_drag_drop:
       contact_layout:
         weight: -8
@@ -35,6 +35,6 @@ settings:
         weight: -6
         enabled: false
       top_section:
-        enabled: true
         weight: -9
+        enabled: true
 field_type: entity_reference_revisions

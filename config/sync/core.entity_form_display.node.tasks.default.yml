@@ -34,101 +34,101 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_task_assignee:
+    type: entity_reference_autocomplete
     weight: 12
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_task_bug:
+    type: entity_reference_autocomplete
     weight: 15
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_task_comment:
-    weight: 26
-    settings: {  }
-    third_party_settings: {  }
     type: comment_default
+    weight: 26
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_task_date:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
     type: daterange_default
+    weight: 10
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_task_description:
-    weight: 7
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
     type: text_textarea
+    weight: 7
     region: content
-  field_task_dev_notes:
-    weight: 16
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_task_dev_notes:
     type: string_textarea
+    weight: 16
     region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_task_label:
+    type: entity_reference_autocomplete
     weight: 14
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_task_priority:
+    type: options_select
     weight: 11
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_task_project:
+    type: entity_reference_autocomplete
     weight: 8
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_task_reporter:
+    type: entity_reference_autocomplete
     weight: 13
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_task_story:
-    weight: 9
-    settings: {  }
-    third_party_settings: {  }
     type: options_select
+    weight: 9
     region: content
-  field_task_vote:
-    weight: 17
     settings: {  }
     third_party_settings: {  }
+  field_task_vote:
     type: votingapi_reaction_default
+    weight: 17
     region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
     weight: 5
@@ -137,24 +137,24 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 3
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 6
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 4
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -167,11 +167,11 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 1
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
 hidden: {  }

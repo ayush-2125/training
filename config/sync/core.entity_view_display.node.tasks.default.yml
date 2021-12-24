@@ -29,107 +29,107 @@ bundle: tasks
 mode: default
 content:
   field_task_assignee:
-    weight: 104
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 104
     region: content
   field_task_bug:
-    weight: 109
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 109
     region: content
   field_task_comment:
-    weight: 113
+    type: comment_default
     label: above
     settings:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    type: comment_default
+    weight: 113
     region: content
   field_task_date:
-    weight: 107
+    type: daterange_custom
     label: above
     settings:
       timezone_override: ''
       date_format: 'l - d / M / Y'
       separator: '-'
     third_party_settings: {  }
-    type: daterange_custom
+    weight: 107
     region: content
   field_task_description:
-    weight: 102
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 102
     region: content
   field_task_dev_notes:
-    weight: 110
+    type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 110
     region: content
   field_task_label:
-    weight: 106
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 106
     region: content
   field_task_priority:
-    weight: 103
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 103
     region: content
   field_task_project:
-    weight: 111
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 111
     region: content
   field_task_reporter:
-    weight: 108
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 108
     region: content
   field_task_story:
-    weight: 105
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 105
     region: content
   field_task_vote:
-    weight: 112
+    type: votingapi_reaction_default
     label: hidden
     settings:
-      show_icon: true
-      sort_reactions: desc
       show_summary: false
+      show_icon: true
       show_label: false
       show_count: false
+      sort_reactions: desc
     third_party_settings: {  }
-    type: votingapi_reaction_default
+    weight: 112
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden: {  }

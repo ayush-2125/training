@@ -26,17 +26,17 @@ mode: teaser
 content:
   field_project_description:
     type: text_trimmed
-    weight: 1
-    region: content
     label: above
     settings:
       trim_length: 600
     third_party_settings: {  }
-  links:
-    weight: 0
+    weight: 1
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   feeds_item: true
   field_product_client: true

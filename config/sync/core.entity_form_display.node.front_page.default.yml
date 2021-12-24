@@ -26,6 +26,7 @@ content:
   field_contact:
     type: entity_reference_paragraphs
     weight: 125
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -34,10 +35,10 @@ content:
       form_display_mode: default
       default_paragraph_type: contact_layout
     third_party_settings: {  }
-    region: content
   field_faq_section:
     type: entity_reference_paragraphs
     weight: 126
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -46,10 +47,10 @@ content:
       form_display_mode: default
       default_paragraph_type: faq
     third_party_settings: {  }
-    region: content
   field_left_image_block:
     type: entity_reference_paragraphs
     weight: 124
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -58,10 +59,10 @@ content:
       form_display_mode: default
       default_paragraph_type: left_image_block
     third_party_settings: {  }
-    region: content
   field_top_blocks:
     type: entity_reference_paragraphs
     weight: 123
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -70,10 +71,10 @@ content:
       form_display_mode: default
       default_paragraph_type: front_page_3_blocks
     third_party_settings: {  }
-    region: content
   field_top_section:
     type: entity_reference_paragraphs
     weight: 122
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -82,7 +83,6 @@ content:
       form_display_mode: default
       default_paragraph_type: top_section
     third_party_settings: {  }
-    region: content
   path:
     type: path
     weight: 30
@@ -91,24 +91,24 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 15
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 120
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 16
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -121,11 +121,11 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 5
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
 hidden: {  }

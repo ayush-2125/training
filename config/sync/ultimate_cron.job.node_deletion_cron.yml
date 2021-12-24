@@ -1,14 +1,14 @@
-uuid: 1ff557c8-8a70-4783-83f3-97651c91526f
+uuid: fbcb6db0-b85f-41b1-97cb-c73fa8b752fd
 langcode: en
 status: true
 dependencies:
   module:
-    - temp_mod
+    - node_deletion
 title: 'Default cron handler'
-id: temp_mod_cron
+id: node_deletion_cron
 weight: 0
-module: temp_mod
-callback: temp_mod_cron
+module: node_deletion
+callback: node_deletion_cron
 scheduler:
   id: simple
 launcher:

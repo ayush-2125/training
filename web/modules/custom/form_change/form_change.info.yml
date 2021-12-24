@@ -1,5 +1,0 @@
-name: Form Alter
-type: module
-description: Altering Form test
-core_version_requirement: ^8.8 || ^9
-package: custom

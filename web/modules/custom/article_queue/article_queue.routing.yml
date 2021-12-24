@@ -1,7 +1,0 @@
-article_queue.queue_example:
-  path: '/article_queue'
-  defaults:
-    _form: '\Drupal\node_delete\Form\NodeDeleteForm'
-    _title: 'Queue testing'
-  requirements:
-    _permission: 'access content'

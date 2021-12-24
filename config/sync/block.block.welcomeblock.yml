@@ -16,10 +16,10 @@ plugin: welcome_block
 settings:
   id: welcome_block
   label: 'Welcome block'
-  provider: welcome_block
   label_display: '0'
+  provider: welcome_block
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

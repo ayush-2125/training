@@ -9,8 +9,8 @@ dependencies:
     - node.type.project
   module:
     - node
-id: project
 label: Project
+id: project
 description: 'Import Project'
 help: ''
 import_period: 1800
@@ -25,49 +25,49 @@ parser_configuration:
   line_limit: 100
 processor: 'entity:node'
 processor_configuration:
+  values:
+    type: project
   langcode: en
   update_existing: 0
   update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
   expire: -1
   owner_feed_author: false
   owner_id: 0
-  authorize: true
-  skip_hash_check: false
-  values:
-    type: project
 custom_sources:
   title:
-    label: title
     value: title
+    label: title
     machine_name: title
   description:
-    label: description
     value: description
+    label: description
     machine_name: description
   client:
-    label: client
     value: client
+    label: client
     machine_name: client
   productowner:
-    label: productowner
     value: productowner
+    label: productowner
     machine_name: productowner
   startdate:
-    label: startdate
     value: startdate
+    label: startdate
     machine_name: startdate
   enddate:
-    label: enddate
     value: enddate
+    label: enddate
     machine_name: enddate
 mappings:
   -
     target: title
     map:
       value: title
-    unique: {  }
     settings:
       language: null
+    unique: {  }
   -
     target: field_product_client
     map:
