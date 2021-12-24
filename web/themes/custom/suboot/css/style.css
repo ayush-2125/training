@@ -539,8 +539,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.nav-padding {
+.navigation-item {
   margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: #5846f9 !important;
 }
 
 #block-suboot-branding {
