@@ -12,7 +12,7 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: suboot_main_menu
 theme: suboot
-region: navigation_collapsible
+region: navigation
 weight: -7
 provider: null
 plugin: 'system_menu_block:main'

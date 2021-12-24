@@ -1,0 +1,7 @@
+uuid: 733a6949-0a12-490e-a24e-98223656b49a
+langcode: en
+status: true
+dependencies: {  }
+name: content_stretched
+label: content_stretched
+effects: {  }

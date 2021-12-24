@@ -12,7 +12,7 @@ dependencies:
 id: dashboardlink
 theme: suboot
 region: navigation_collapsible
-weight: -5
+weight: -7
 provider: null
 plugin: 'block_content:9e8b3aff-17ea-416d-aed9-a547678abc62'
 settings:

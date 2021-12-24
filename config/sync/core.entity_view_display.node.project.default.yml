@@ -17,6 +17,7 @@ dependencies:
     - node.type.project
   module:
     - datetime
+    - text
     - user
 id: node.project.default
 targetEntityType: node
@@ -57,11 +58,11 @@ content:
     type: string
     region: content
   field_project_description:
-    weight: 2
+    weight: 11
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
   field_project_end_date:
     weight: 4

@@ -1,0 +1,14 @@
+uuid: f5c18ad0-fa85-4d7b-b70f-933b78a143bc
+langcode: en
+status: true
+dependencies: {  }
+name: user_image
+label: 'User image'
+effects:
+  034cafb4-138c-499a-88a7-bd57021d6ca5:
+    uuid: 034cafb4-138c-499a-88a7-bd57021d6ca5
+    id: image_resize
+    weight: 1
+    data:
+      width: 100
+      height: 100

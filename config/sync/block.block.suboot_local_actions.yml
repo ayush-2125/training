@@ -9,7 +9,7 @@ _core:
 id: suboot_local_actions
 theme: suboot
 region: header
-weight: -3
+weight: -6
 provider: null
 plugin: local_actions_block
 settings:
