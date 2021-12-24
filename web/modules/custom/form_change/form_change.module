@@ -1,0 +1,35 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+
+function form_change_form_alter(&$form, FormStateInterface $form_state, $form_id){
+  if($form_id == 'node_project_form'){
+  $form['field_project_banner_caption']['widget']['0']['value']['#title'] = t('Bannner');
+  $form['testfield'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Test Checkbox'),
+  );
+  $form['firstbox'] = array(
+    '#title' => t('TECT WHEN THE CHECKBOX IS CHECKED'),
+    '#type' => 'textfield',
+    '#states' => array(
+      'visible' => array(
+        ':input[name="testfield"]' => array('checked' => TRUE),
+      ),
+    ),
+  );
+  $form['display2'] = array(
+    '#title' => t('TECT WHEN THE CHECKBOX IS UNCHECKED!!!!!!!!!!'),
+    '#type' => 'textfield',
+    '#states' => array(
+      'visible' => array(
+        ':input[id="edit-testfield"]' => array('checked' => TRUE),
+      ),
+    ),
+  );
+  }
+}

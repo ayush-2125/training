@@ -1,0 +1,19 @@
+uuid: a1def928-3318-44ec-95fb-0ea1ef2e8f27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_front_page_block_1_title
+    - paragraphs.paragraphs_type.front_page_3_blocks
+id: paragraph.front_page_3_blocks.field_front_page_block_1_title
+field_name: field_front_page_block_1_title
+entity_type: paragraph
+bundle: front_page_3_blocks
+label: 'Block 1 Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

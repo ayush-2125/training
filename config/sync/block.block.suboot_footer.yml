@@ -1,4 +1,4 @@
-uuid: 76669219-c031-480d-9ee1-7afd27b889ad
+uuid: 21b65e40-9461-4d6c-8ce7-e3fef87b4785
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: suboot_footer
 theme: suboot
 region: footer
-weight: -5
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

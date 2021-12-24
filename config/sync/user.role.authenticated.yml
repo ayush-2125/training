@@ -18,3 +18,7 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view media'
+  - 'view paragraph content contact_layout'
+  - 'view paragraph content front_page_3_blocks'
+  - 'view paragraph content left_image_block'
+  - 'view paragraph content top_section'

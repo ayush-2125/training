@@ -1,0 +1,55 @@
+uuid: aae33390-aa33-4be9-874c-2b22a0096f35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.top_section.field_top_section_description
+    - field.field.paragraph.top_section.field_top_section_heading
+    - field.field.paragraph.top_section.field_top_section_img
+    - field.field.paragraph.top_section.field_top_section_link
+    - paragraphs.paragraphs_type.top_section
+  module:
+    - link
+    - text
+id: paragraph.top_section.default
+targetEntityType: paragraph
+bundle: top_section
+mode: default
+content:
+  field_top_section_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_top_section_heading:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_top_section_img:
+    type: entity_reference_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_top_section_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

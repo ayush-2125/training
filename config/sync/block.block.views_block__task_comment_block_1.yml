@@ -1,0 +1,40 @@
+uuid: 57f3d71c-bb1f-4eaa-8cea-0db5d1391e3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.task_comment
+  module:
+    - ctools
+    - node
+    - views
+  theme:
+    - suboot
+id: views_block__task_comment_block_1
+theme: suboot
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:task_comment-block_1'
+settings:
+  id: 'views_block:task_comment-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      tasks: tasks
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      tasks: tasks
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

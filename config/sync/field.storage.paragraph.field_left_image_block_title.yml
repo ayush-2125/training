@@ -1,0 +1,19 @@
+uuid: 1a64f6f2-40aa-41e4-bbd1-dafc05378826
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_left_image_block_title
+field_name: field_left_image_block_title
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

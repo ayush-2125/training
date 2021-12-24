@@ -1,0 +1,114 @@
+uuid: 0e6d3d26-0851-4010-9d71-5a35844a144f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_layout.field_contact_form_address
+    - field.field.paragraph.contact_layout.field_contact_form_address_text
+    - field.field.paragraph.contact_layout.field_contact_form_email
+    - field.field.paragraph.contact_layout.field_contact_form_email_title
+    - field.field.paragraph.contact_layout.field_contact_layout_address_img
+    - field.field.paragraph.contact_layout.field_contact_layout_description
+    - field.field.paragraph.contact_layout.field_contact_layout_email_image
+    - field.field.paragraph.contact_layout.field_contact_layout_heading
+    - field.field.paragraph.contact_layout.field_contact_layout_phone
+    - field.field.paragraph.contact_layout.field_contact_layout_phone_image
+    - field.field.paragraph.contact_layout.field_contact_layout_phone_title
+    - paragraphs.paragraphs_type.contact_layout
+  module:
+    - telephone
+    - text
+id: paragraph.contact_layout.default
+targetEntityType: paragraph
+bundle: contact_layout
+mode: default
+content:
+  field_contact_form_address:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_contact_form_address_text:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_form_email:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_contact_form_email_title:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_layout_address_img:
+    type: entity_reference_entity_view
+    weight: 11
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_contact_layout_description:
+    weight: 15
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_contact_layout_email_image:
+    type: entity_reference_entity_view
+    weight: 13
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_contact_layout_heading:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_layout_phone:
+    weight: 14
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_contact_layout_phone_image:
+    type: entity_reference_entity_view
+    weight: 12
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_contact_layout_phone_title:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

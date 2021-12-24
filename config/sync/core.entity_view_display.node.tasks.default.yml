@@ -1,0 +1,135 @@
+uuid: a76c45f5-84b2-4a7c-9b1b-3f59b1fe71ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tasks.field_task_assignee
+    - field.field.node.tasks.field_task_bug
+    - field.field.node.tasks.field_task_comment
+    - field.field.node.tasks.field_task_date
+    - field.field.node.tasks.field_task_description
+    - field.field.node.tasks.field_task_dev_notes
+    - field.field.node.tasks.field_task_label
+    - field.field.node.tasks.field_task_priority
+    - field.field.node.tasks.field_task_project
+    - field.field.node.tasks.field_task_reporter
+    - field.field.node.tasks.field_task_story
+    - field.field.node.tasks.field_task_vote
+    - node.type.tasks
+  module:
+    - comment
+    - datetime_range
+    - options
+    - text
+    - user
+    - votingapi_reaction
+id: node.tasks.default
+targetEntityType: node
+bundle: tasks
+mode: default
+content:
+  field_task_assignee:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_task_bug:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_task_comment:
+    weight: 113
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_task_date:
+    weight: 107
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: 'l - d / M / Y'
+      separator: '-'
+    third_party_settings: {  }
+    type: daterange_custom
+    region: content
+  field_task_description:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_task_dev_notes:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_task_label:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_task_priority:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_task_project:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_task_reporter:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_task_story:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_task_vote:
+    weight: 112
+    label: hidden
+    settings:
+      show_icon: true
+      sort_reactions: desc
+      show_summary: false
+      show_label: false
+      show_count: false
+    third_party_settings: {  }
+    type: votingapi_reaction_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

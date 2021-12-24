@@ -1,0 +1,23 @@
+uuid: 92b57ee3-555d-4b5c-aff1-c87e8e74fd1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_top_section_link
+    - paragraphs.paragraphs_type.top_section
+  module:
+    - link
+id: paragraph.top_section.field_top_section_link
+field_name: field_top_section_link
+entity_type: paragraph
+bundle: top_section
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

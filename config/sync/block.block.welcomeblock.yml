@@ -1,6 +1,6 @@
-uuid: eebe6208-496a-4817-a80e-78f2ffe53be4
+uuid: deda23e3-a0e8-4c96-bad8-71db761c928f
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ dependencies:
 id: welcomeblock
 theme: suboot
 region: content
-weight: -7
+weight: -8
 provider: null
 plugin: welcome_block
 settings:

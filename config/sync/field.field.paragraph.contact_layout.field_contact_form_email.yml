@@ -1,0 +1,19 @@
+uuid: d5d8f54f-8d2b-4449-a48e-7a6ea9935a4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_form_email
+    - paragraphs.paragraphs_type.contact_layout
+id: paragraph.contact_layout.field_contact_form_email
+field_name: field_contact_form_email
+entity_type: paragraph
+bundle: contact_layout
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,19 @@
+uuid: 02422208-c9a0-442b-b4ff-97b5392d1a07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_dev_notes
+    - node.type.tasks
+id: node.tasks.field_task_dev_notes
+field_name: field_task_dev_notes
+entity_type: node
+bundle: tasks
+label: 'Dev Notes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

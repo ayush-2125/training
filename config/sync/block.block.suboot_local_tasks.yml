@@ -1,15 +1,17 @@
-uuid: b75745fa-1943-4fb7-a98b-7e29e5ba2ffa
+uuid: 1467e6d1-cc30-4ad2-9102-5ba217bb0782
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - suboot
 _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
 id: suboot_local_tasks
 theme: suboot
-region: header
-weight: -7
+region: content
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:
@@ -19,4 +21,8 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true

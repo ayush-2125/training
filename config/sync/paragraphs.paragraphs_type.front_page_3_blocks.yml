@@ -1,0 +1,10 @@
+uuid: 1cb80d8f-58ba-4c8e-8300-e7a158294484
+langcode: en
+status: true
+dependencies: {  }
+id: front_page_3_blocks
+label: '3 Column Card Layout'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

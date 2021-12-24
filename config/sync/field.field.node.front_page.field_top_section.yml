@@ -1,0 +1,40 @@
+uuid: 2e5a8404-0dac-4630-8122-4db054e44e32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_top_section
+    - node.type.front_page
+    - paragraphs.paragraphs_type.top_section
+  module:
+    - entity_reference_revisions
+id: node.front_page.field_top_section
+field_name: field_top_section
+entity_type: node
+bundle: front_page
+label: 'Top Section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      top_section: top_section
+    target_bundles_drag_drop:
+      contact_layout:
+        weight: -8
+        enabled: false
+      front_page_3_blocks:
+        weight: -7
+        enabled: false
+      left_image_block:
+        weight: -6
+        enabled: false
+      top_section:
+        enabled: true
+        weight: -9
+field_type: entity_reference_revisions

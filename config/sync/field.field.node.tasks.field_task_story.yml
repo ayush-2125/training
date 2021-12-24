@@ -1,0 +1,21 @@
+uuid: 8b412b5e-b2ba-45d8-810d-08d1fd353bde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_story
+    - node.type.tasks
+  module:
+    - options
+id: node.tasks.field_task_story
+field_name: field_task_story
+entity_type: node
+bundle: tasks
+label: Story
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

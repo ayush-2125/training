@@ -1,0 +1,19 @@
+uuid: e1a4b827-b2a2-4680-807b-2c1972533285
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - votingapi_reaction
+id: node.field_task_vote
+field_name: field_task_vote
+entity_type: node
+type: votingapi_reaction
+settings: {  }
+module: votingapi_reaction
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

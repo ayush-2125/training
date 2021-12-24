@@ -3,3 +3,5 @@ globalstyle:
     theme:
       css/style.css: {}
       https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css: { type: external, minified: true }
+  js:
+      js/script.js: {}

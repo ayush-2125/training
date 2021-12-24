@@ -1,0 +1,14 @@
+uuid: c0508e22-c50b-4336-8afd-9a6030bed1c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - votingapi_reaction
+third_party_settings:
+  votingapi_reaction:
+    reaction: true
+    icon: ''
+id: reaction_love
+label: 'I love this'
+value_type: points
+description: 'Automatically created reaction'

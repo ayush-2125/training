@@ -1,0 +1,116 @@
+uuid: affd411a-2d5c-4985-9841-3b95becbf4ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq.field_faq_answer_1
+    - field.field.paragraph.faq.field_faq_answer_2
+    - field.field.paragraph.faq.field_faq_answer_3
+    - field.field.paragraph.faq.field_faq_answer_4
+    - field.field.paragraph.faq.field_faq_answer_5
+    - field.field.paragraph.faq.field_faq_answer_6
+    - field.field.paragraph.faq.field_faq_question_1
+    - field.field.paragraph.faq.field_faq_question_2
+    - field.field.paragraph.faq.field_faq_question_3
+    - field.field.paragraph.faq.field_faq_question_4
+    - field.field.paragraph.faq.field_faq_question_5
+    - field.field.paragraph.faq.field_faq_question_6
+    - paragraphs.paragraphs_type.faq
+  module:
+    - text
+id: paragraph.faq.default
+targetEntityType: paragraph
+bundle: faq
+mode: default
+content:
+  field_faq_answer_1:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_faq_answer_2:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_faq_answer_3:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_faq_answer_4:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_faq_answer_5:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_faq_answer_6:
+    weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_faq_question_1:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_faq_question_2:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_faq_question_3:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_faq_question_4:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_faq_question_5:
+    weight: 8
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_faq_question_6:
+    weight: 10
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

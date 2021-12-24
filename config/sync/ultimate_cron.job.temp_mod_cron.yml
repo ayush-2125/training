@@ -1,0 +1,17 @@
+uuid: 1ff557c8-8a70-4783-83f3-97651c91526f
+langcode: en
+status: true
+dependencies:
+  module:
+    - temp_mod
+title: 'Default cron handler'
+id: temp_mod_cron
+weight: 0
+module: temp_mod
+callback: temp_mod_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

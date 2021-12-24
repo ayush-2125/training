@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node_delete
+title: 'Node Delete Worker'
+id: node_queue_worker
+module: node_delete
+callback: node_delete_cron

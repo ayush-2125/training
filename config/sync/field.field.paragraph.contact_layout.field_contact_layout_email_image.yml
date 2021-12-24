@@ -1,0 +1,29 @@
+uuid: 366585e1-bd0d-4f6d-b3dd-09615174e888
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_layout_email_image
+    - media.type.image
+    - paragraphs.paragraphs_type.contact_layout
+id: paragraph.contact_layout.field_contact_layout_email_image
+field_name: field_contact_layout_email_image
+entity_type: paragraph
+bundle: contact_layout
+label: 'Email Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

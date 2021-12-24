@@ -1,0 +1,7 @@
+custom_cron.delete_node_example:
+  path: '/admin/customcron'
+  defaults:
+    _form: '\Drupal\custom_cron\Form\CheckProjectsForm'
+    _title: 'Batch Example'
+  requirements:
+    _permission: 'access content'

@@ -38,12 +38,16 @@ class WelcomeBlock extends BlockBase {
     $name = $user->get('name')->value;
     $male = "Welcome Sir $name !";
     $female = "Welcome Ma'am $name !";
+    $unknown = "Welcome Sir/Ma'am $name !" ;
 
     if ($gender == 'Male') {
       return '<h1>' . $male . '</h1>';
     }
-    else {
+    elseif($gender == 'Female') {
       return '<h1>' . $female . '</h1>';
+    }
+    else {
+      return '<h1>' . $unknown . '</h1>';
     }
   }
 

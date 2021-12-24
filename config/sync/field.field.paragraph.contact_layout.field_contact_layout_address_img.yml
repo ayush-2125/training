@@ -1,0 +1,29 @@
+uuid: 3fe324d8-9beb-465e-b3f3-073cba37a429
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_layout_address_img
+    - media.type.image
+    - paragraphs.paragraphs_type.contact_layout
+id: paragraph.contact_layout.field_contact_layout_address_img
+field_name: field_contact_layout_address_img
+entity_type: paragraph
+bundle: contact_layout
+label: 'Address Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

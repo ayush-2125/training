@@ -1,0 +1,21 @@
+uuid: 1d495681-539a-4910-93ab-a405e54a7200
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_left_image_block_descripti
+    - paragraphs.paragraphs_type.left_image_block
+  module:
+    - text
+id: paragraph.left_image_block.field_left_image_block_descripti
+field_name: field_left_image_block_descripti
+entity_type: paragraph
+bundle: left_image_block
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

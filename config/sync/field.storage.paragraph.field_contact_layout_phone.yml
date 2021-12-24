@@ -1,0 +1,19 @@
+uuid: 69476784-578e-4e2d-9936-7037e5470bf3
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - telephone
+id: paragraph.field_contact_layout_phone
+field_name: field_contact_layout_phone
+entity_type: paragraph
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

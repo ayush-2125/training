@@ -1,0 +1,14 @@
+uuid: 348ff3bd-75e8-4f0d-ac5a-fe4f16a68211
+langcode: en
+status: true
+dependencies:
+  module:
+    - votingapi_reaction
+third_party_settings:
+  votingapi_reaction:
+    reaction: true
+    icon: ''
+id: reaction_angry
+label: 'I''m angry'
+value_type: points
+description: 'Automatically created reaction'

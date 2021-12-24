@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - temp_mod
+title: 'Temm mod Worker'
+id: temp_queue_worker
+module: temp_mod
+callback: temp_mod_cron

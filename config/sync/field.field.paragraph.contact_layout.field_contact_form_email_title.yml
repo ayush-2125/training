@@ -1,0 +1,19 @@
+uuid: aa500a85-ade7-4301-b606-d3905f0584e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_form_email_title
+    - paragraphs.paragraphs_type.contact_layout
+id: paragraph.contact_layout.field_contact_form_email_title
+field_name: field_contact_form_email_title
+entity_type: paragraph
+bundle: contact_layout
+label: 'Email Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

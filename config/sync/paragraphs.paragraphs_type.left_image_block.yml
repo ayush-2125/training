@@ -1,0 +1,10 @@
+uuid: 89be01f4-3518-4795-95d5-53621bcee029
+langcode: en
+status: true
+dependencies: {  }
+id: left_image_block
+label: 'Image block'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

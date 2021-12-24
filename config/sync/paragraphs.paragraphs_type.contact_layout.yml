@@ -1,0 +1,10 @@
+uuid: 78d7dc95-3bd4-44d2-bdca-dfd2268cf08c
+langcode: en
+status: true
+dependencies: {  }
+id: contact_layout
+label: 'Contact layout'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

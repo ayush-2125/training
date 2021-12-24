@@ -1,0 +1,21 @@
+uuid: 42709ccc-d667-4848-a232-0e60a1aff55a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_label
+    - node.type.tasks
+id: node.tasks.field_task_label
+field_name: field_task_label
+entity_type: node
+bundle: tasks
+label: 'Task Label'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

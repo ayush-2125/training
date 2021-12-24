@@ -1,0 +1,7 @@
+temp_mod.queue_example:
+  path: '/tempmod'
+  defaults:
+    _form: '\Drupal\temp_mod\Form\FormQueue'
+    _title: 'Queue testing'
+  requirements:
+    _permission: 'access content'

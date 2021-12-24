@@ -1,0 +1,21 @@
+uuid: 7af9dca0-78e0-46c0-b2b0-93715d3d9153
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_faq_answer_3
+    - paragraphs.paragraphs_type.faq
+  module:
+    - text
+id: paragraph.faq.field_faq_answer_3
+field_name: field_faq_answer_3
+entity_type: paragraph
+bundle: faq
+label: 'FAQ Answer 3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

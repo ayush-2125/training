@@ -1,0 +1,14 @@
+uuid: 49c1f687-d489-4719-b8e5-de5ee64640ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - votingapi_reaction
+third_party_settings:
+  votingapi_reaction:
+    reaction: true
+    icon: ''
+id: reaction_sad
+label: 'I''m sad'
+value_type: points
+description: 'Automatically created reaction'

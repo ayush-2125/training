@@ -1,4 +1,4 @@
-uuid: fab87974-cdb0-41ca-969f-018951f57a26
+uuid: a4067aee-332d-48b3-9320-aa21bdb665ef
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: suboot_messages
 theme: suboot
 region: header
-weight: -8
+weight: -7
 provider: null
 plugin: system_messages_block
 settings:

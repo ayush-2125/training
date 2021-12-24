@@ -1,0 +1,21 @@
+uuid: 8f646c95-1601-44e4-b45d-60cdb9731fe2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_description
+    - node.type.tasks
+  module:
+    - text
+id: node.tasks.field_task_description
+field_name: field_task_description
+entity_type: node
+bundle: tasks
+label: 'Task Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

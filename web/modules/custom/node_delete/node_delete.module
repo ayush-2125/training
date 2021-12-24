@@ -1,0 +1,18 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Queue\QueueFactory;
+use Drupal\Core\Queue\QueueInterface;
+
+/**
+ * Cron job for Delete NOde.
+ */
+function node_delete_cron() {
+  $entities_load = \Drupal::config('node_delete.nodedeletesettings');
+  /** @var QueueFactory $queue_factory */
+  $queue_factory = \Drupal::service('queue');
+  /** @var QueueInterface $queue */
+  $queue = $queue_factory->get('node_delete_processor');
+  $item->nid = $entity->id();
+  $queue->createItem($item);
+}

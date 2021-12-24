@@ -1,0 +1,19 @@
+uuid: 35c73fd5-6391-405f-bed1-90b4c70f1612
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_top_section_link
+field_name: field_top_section_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

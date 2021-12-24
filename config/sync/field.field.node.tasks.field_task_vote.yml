@@ -1,0 +1,34 @@
+uuid: 78389ba7-f726-4ae2-8a3a-c695c2c5d40d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_task_vote
+    - node.type.tasks
+  module:
+    - votingapi_reaction
+id: node.tasks.field_task_vote
+field_name: field_task_vote
+entity_type: node
+bundle: tasks
+label: Vote
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: '2'
+default_value_callback: ''
+settings:
+  anonymous_detection:
+    1: '1'
+    2: '2'
+  anonymous_rollover: '-1'
+  reactions:
+    reaction_laughing: reaction_laughing
+    reaction_like: reaction_like
+    reaction_love: reaction_love
+    reaction_sad: reaction_sad
+    reaction_surprised: reaction_surprised
+    reaction_angry: 0
+field_type: votingapi_reaction
