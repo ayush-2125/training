@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
 uuid: 4f756916-ec3c-4b6e-94ca-1cce0e038bcc
 name: Tucksy
 mail: ayush.pandey@srijan.net
@@ -8,7 +11,4 @@ page:
   front: /node/101
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

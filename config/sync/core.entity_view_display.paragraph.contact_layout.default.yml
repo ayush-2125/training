@@ -24,91 +24,91 @@ bundle: contact_layout
 mode: default
 content:
   field_contact_form_address:
-    weight: 4
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 4
     region: content
   field_contact_form_address_text:
-    weight: 3
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
   field_contact_form_email:
-    weight: 7
+    type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 7
     region: content
   field_contact_form_email_title:
-    weight: 6
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 6
     region: content
   field_contact_layout_address_img:
     type: entity_reference_entity_view
-    weight: 11
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 11
     region: content
   field_contact_layout_description:
-    weight: 15
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 15
     region: content
   field_contact_layout_email_image:
     type: entity_reference_entity_view
-    weight: 13
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 13
     region: content
   field_contact_layout_heading:
-    weight: 0
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_contact_layout_phone:
-    weight: 14
+    type: telephone_link
     label: above
     settings:
       title: ''
     third_party_settings: {  }
-    type: telephone_link
+    weight: 14
     region: content
   field_contact_layout_phone_image:
     type: entity_reference_entity_view
-    weight: 12
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 12
     region: content
   field_contact_layout_phone_title:
-    weight: 8
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 8
     region: content
 hidden: {  }

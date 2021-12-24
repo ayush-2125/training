@@ -21,9 +21,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       left_image_block: left_image_block
+    negate: 0
     target_bundles_drag_drop:
       contact_layout:
         weight: 5
@@ -32,8 +32,8 @@ settings:
         weight: 6
         enabled: false
       left_image_block:
-        enabled: true
         weight: 7
+        enabled: true
       top_section:
         weight: 8
         enabled: false

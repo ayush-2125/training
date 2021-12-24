@@ -814,3 +814,10 @@ $databases['default']['default'] = array (
 );
 $settings['config_sync_directory'] = '../config/sync';
 $config['system.logging']['error_level'] = 'verbose';
+$settings['trusted_host_patterns'] = [
+  '^www\.training\.docksal$',
+  '^training\.docksal$',
+  '^.+\.training\.docksal$',
+ '^training\.docksal$',
+ '^.+\.training\.docksal$',
+];

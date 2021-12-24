@@ -1,5 +1,0 @@
-name: Article queue
-type: module
-description: Testing queue
-core_version_requirement: ^8.8 || ^9
-package: custom

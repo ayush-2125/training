@@ -21,16 +21,16 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       front_page_3_blocks: front_page_3_blocks
+    negate: 0
     target_bundles_drag_drop:
       contact_layout:
         weight: -7
         enabled: false
       front_page_3_blocks:
-        enabled: true
         weight: -8
+        enabled: true
       left_image_block:
         weight: -6
         enabled: false
