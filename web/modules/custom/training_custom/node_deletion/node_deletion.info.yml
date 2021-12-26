@@ -1,5 +1,5 @@
-name: NOde delete Queue
+name: Node Deletion
 type: module
-description: Testing queue
+description: Delete Nodes efficiently
 core_version_requirement: ^8.8 || ^9
 package: custom

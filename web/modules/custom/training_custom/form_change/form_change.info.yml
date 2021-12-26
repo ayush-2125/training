@@ -1,5 +1,5 @@
-name: Article queue
+name: Form Change
 type: module
-description: Testing queue
+description: Altering Form
 core_version_requirement: ^8.8 || ^9
 package: custom

@@ -9,8 +9,8 @@ dependencies:
     - field.field.user.user.field_user_phone
   module:
     - user
-id: user_csv
 label: 'User CSV'
+id: user_csv
 description: 'Import User information'
 help: ''
 import_period: -1
@@ -25,59 +25,59 @@ parser_configuration:
   line_limit: 100
 processor: 'entity:user'
 processor_configuration:
+  values: {  }
   langcode: en
   update_existing: 0
   update_non_existent: _keep
-  expire: -1
   skip_hash_check: false
-  owner_id: 0
-  values: {  }
   authorize: false
+  expire: -1
   owner_feed_author: false
+  owner_id: 0
 custom_sources:
   name:
-    label: name
     value: name
+    label: name
     machine_name: name
   email:
-    label: email
     value: email
+    label: email
     machine_name: email
   password:
-    label: password
     value: password
+    label: password
     machine_name: password
   description:
-    label: description
     value: description
+    label: description
     machine_name: description
   dateofbirth:
-    label: dateofbirth
     value: dateofbirth
+    label: dateofbirth
     machine_name: dateofbirth
   alternateemail:
-    label: alternateemail
     value: alternateemail
+    label: alternateemail
     machine_name: alternateemail
   phone:
-    label: phone
     value: phone
+    label: phone
     machine_name: phone
   role:
-    label: role
     value: role
+    label: role
     machine_name: role
   status:
-    label: status
     value: status
+    label: status
     machine_name: status
 mappings:
   -
     target: name
     map:
       value: name
-    unique: {  }
     settings: {  }
+    unique: {  }
   -
     target: field_user_description
     map:
@@ -95,10 +95,10 @@ mappings:
     target: field_user_al
     map:
       value: alternateemail
-    unique: {  }
     settings:
       language: null
       defuse: false
+    unique: {  }
   -
     target: field_user_phone
     map:

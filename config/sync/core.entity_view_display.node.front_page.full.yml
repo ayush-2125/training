@@ -20,44 +20,44 @@ mode: full
 content:
   field_contact:
     type: entity_reference_revisions_entity_view
-    weight: 105
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 105
     region: content
   field_left_image_block:
     type: entity_reference_revisions_entity_view
-    weight: 104
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 104
     region: content
   field_top_blocks:
     type: entity_reference_revisions_entity_view
-    weight: 103
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 103
     region: content
   field_top_section:
     type: entity_reference_revisions_entity_view
-    weight: 102
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 102
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_faq_section: true

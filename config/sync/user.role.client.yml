@@ -1,7 +1,13 @@
 uuid: 2a12c6a3-733d-40c2-9c43-bea096f99fab
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.article
+    - node.type.page
+  module:
+    - node
+    - toolbar
 id: client
 label: Client
 weight: 5

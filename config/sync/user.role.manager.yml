@@ -1,7 +1,10 @@
 uuid: d0577e32-6cb5-436e-b952-8bdf04fc318e
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - role_delegation
+    - toolbar
 id: manager
 label: Manager
 weight: 3

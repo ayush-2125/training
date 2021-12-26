@@ -6,6 +6,7 @@ id: user_export
 label: 'User export'
 entity_type_id: user
 bundle: user
+delimiter: ','
 fields:
   uid:
     enable: true
@@ -362,4 +363,3 @@ fields:
         property_separator: '|'
         property_separate_column: 0
         format: ''
-delimiter: ','

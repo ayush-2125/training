@@ -1,7 +1,24 @@
 uuid: 5f14e475-b5dd-45f8-8af5-c73be135e1f9
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.article
+    - node.type.page
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - config
+    - contact
+    - file
+    - filter
+    - node
+    - path
+    - search
+    - system
+    - taxonomy
+    - toolbar
 id: developer
 label: Developer
 weight: 4

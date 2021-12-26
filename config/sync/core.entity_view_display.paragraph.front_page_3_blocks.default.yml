@@ -21,75 +21,75 @@ bundle: front_page_3_blocks
 mode: default
 content:
   field_front_page_block_1_descrip:
-    weight: 9
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 9
     region: content
   field_front_page_block_1_image:
     type: entity_reference_entity_view
-    weight: 2
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 2
     region: content
   field_front_page_block_1_title:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: content
   field_front_page_block_2_descrip:
-    weight: 10
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 10
     region: content
   field_front_page_block_2_image:
     type: entity_reference_entity_view
-    weight: 5
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 5
     region: content
   field_front_page_block_2_title:
-    weight: 3
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
   field_front_page_block_3_descrip:
-    weight: 11
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 11
     region: content
   field_front_page_block_3_image:
     type: entity_reference_entity_view
-    weight: 8
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 8
     region: content
   field_front_page_block_3_title:
-    weight: 6
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 6
     region: content
 hidden: {  }

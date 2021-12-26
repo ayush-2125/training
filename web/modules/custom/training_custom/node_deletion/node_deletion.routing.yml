@@ -1,0 +1,7 @@
+node_deletion.delete_node:
+  path: '/admin/deletenode'
+  defaults:
+    _form: '\Drupal\node_deletion\Form\DeleteNodeForm'
+    _title: 'Delete Node'
+  requirements:
+    _permission: 'access content'
