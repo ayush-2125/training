@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+<div class="login-buttons-section">
+  <a class="login-buttons" href="/user/register">CREATE ACCOUNT</a>
+  <a class="login-buttons" href="/user/password">RESET PASSWORD</a>
+</div>
+<form{{ attributes }}>
+	<div class="container">
+		<div class="login-form">
+			<div class="login-form-image">
+				<div id="error_messages"></div>
+ 			 		{{ element.messages }}
+						<h2 class="login-form-heading">
+							Let's login.
+								<small>Provide the details below</small>
+						</h2>
+				</div>
+					<div class="login-form-inner">
+						<div class="login-form-input">
+      				{{ element.name }}
+						</div>
+					<div class="login-form-input">
+      			{{ element.pass }}
+					</div>
+          {{ element.form_build_id }} {# required #}
+          {{ element.form_id }} {# required #}
+			  	<div class="login-button">
+		  			{{ element.actions.submit }}
+        	</div>
+			</div>
+		</div>
+	</div>
+</form>
