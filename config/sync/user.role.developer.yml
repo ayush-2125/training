@@ -9,7 +9,7 @@ dependencies:
     - node.type.page
     - node.type.project
     - node.type.tasks
-    - taxonomy.vocabulary.tags
+    - node.type.page
   module:
     - comment
     - config
