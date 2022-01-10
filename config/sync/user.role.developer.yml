@@ -5,8 +5,11 @@ dependencies:
   config:
     - filter.format.full_html
     - node.type.article
+    - node.type.front_page
     - node.type.page
-    - taxonomy.vocabulary.tags
+    - node.type.project
+    - node.type.tasks
+    - node.type.page
   module:
     - comment
     - config
@@ -42,18 +45,38 @@ permissions:
   - 'administer taxonomy'
   - 'administer url aliases'
   - 'create article content'
+  - 'create front_page content'
   - 'create page content'
+  - 'create project content'
+  - 'create tasks content'
   - 'create terms in tags'
   - 'delete all revisions'
+  - 'delete any article content'
+  - 'delete any front_page content'
+  - 'delete any page content'
+  - 'delete any project content'
+  - 'delete any tasks content'
   - 'delete article revisions'
   - 'delete own article content'
+  - 'delete own front_page content'
   - 'delete own page content'
+  - 'delete own project content'
+  - 'delete own tasks content'
   - 'delete page revisions'
+  - 'delete project revisions'
+  - 'delete tasks revisions'
   - 'delete terms in tags'
   - 'edit any article content'
+  - 'edit any front_page content'
+  - 'edit any page content'
+  - 'edit any project content'
+  - 'edit any tasks content'
   - 'edit own article content'
   - 'edit own comments'
+  - 'edit own front_page content'
   - 'edit own page content'
+  - 'edit own project content'
+  - 'edit own tasks content'
   - 'edit terms in tags'
   - 'export configuration'
   - 'import configuration'

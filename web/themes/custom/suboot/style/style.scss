@@ -6,7 +6,8 @@ $task_column_linkcolor : #59687f;
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 .h4, h4 {
 font-weight: 600 !important;
@@ -15,6 +16,18 @@ font-size: 18px !important;
 a:hover {
   color: #5846f9;
 }
+}
+
+#navigation .navbar-nav li.nav-item a.nav-link.active{
+  background-color: #5846f9;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+}
+
+.text-center{
+  text-transform: capitalize;
 }
 
 .purplebg{
@@ -518,9 +531,9 @@ color: black;
   margin-bottom: 0;
 }
 
-html { 
-  scroll-behavior: smooth; 
-} 
+html {
+  scroll-behavior: smooth;
+}
 
 // NAVBAR EDITING
 
@@ -559,9 +572,6 @@ margin-left: 10px;
   border: 0;
 }
 
-
-
-
 .section-header {
   text-align: center;
   padding-bottom: 40px;
@@ -589,5 +599,129 @@ margin-left: 10px;
   }
 }
 
+// LOGIN AND REGISTRATION FORM
 
+.registration-form {
+	margin: 2rem auto;
+  font-family: "DM Sans", sans-serif;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 800px;
+	background-color: #FFF;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px 0 rgba(#999, .25);
+	padding: .75rem;
+}
+
+.login-form {
+	margin: 2rem auto;
+  font-family: "DM Sans", sans-serif;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 425px;
+	background-color: #FFF;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px 0 rgba(#999, .25);
+	padding: .75rem;
+}
+
+.login-form-image {
+	border-radius: 8px;
+	overflow: hidden;
+	padding-bottom: 65%;
+	background-image: url('https://assets.codepen.io/285131/coffee_1.jpg');
+	background-repeat: no-repeat;
+	background-size: 150%;
+	background-position: 0 5%;
+	position: relative;
+}
+
+.registration-form-image {
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 30%;
+    background-image: url("https://assets.codepen.io/285131/coffee_1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+}
+
+.login-form-heading {
+	position: absolute;
+	left: 10%;
+	top: 15%;
+	right: 10%;
+	font-size: 1.75rem;
+	font-weight: 700;
+	color: #735400;
+	line-height: 1.222;
+	small {
+		display: block;
+		font-size: .75em;
+		font-weight: 400;
+		margin-top: .25em;
+	}
+}
+
+.login-form-inner {
+	padding: 1rem 1rem 0;
+}
+
+.login-button .btn , .btn-primary{
+  margin-top: 1rem;
+	font: inherit;
+	font-size: 1.25rem;
+	padding: 1em;
+	width: 100%;
+	font-weight: 500;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+	&:focus {
+		outline: 0;
+	}
+}
+
+// LOGIN BUTTONS STYLING
+
+.login-buttons-section {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.login-buttons {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #5846f9;
+  margin: 20px 20px 20px 20px;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  &:hover{
+  -webkit-box-shadow:0px 0px 12px 8px rgba(88,70,249,0.49);
+  -moz-box-shadow: 0px 0px 12px 8px rgba(88,70,249,0.49);
+  box-shadow: 0px 0px 12px 8px rgba(88,70,249,0.49);
+  transition: 1s;
+  }
+}
+
+.login-buttons-section a {
+  color: #5846f9;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
 

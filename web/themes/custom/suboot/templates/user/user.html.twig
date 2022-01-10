@@ -17,11 +17,16 @@
 *
 * @ingroup themeable
 */
-#}
+#}{{dump()}}
+{% set roles = user.getroles(TRUE) %}
 <article{{ attributes }}>
-</article>
 {% set url = url('<current>') %}
 {% if '/profile/' in url|render|render %}
+<div class="contact-title">
+<h2>{{'My Account'|t}} </h2>
+     <a href="#my-projects" class='btn btn-outline-primary'>{{ 'My Projects'|t }}</a>
+  <a href="#my-tasks" class='btn btn-outline-primary ml-3'>{{'My Tasks'|t}}</a>
+  </div>
   <div class="container">
     <div class="row gutters-sm">
       <div class="col-md-4 mb-3">
@@ -35,13 +40,17 @@
                 <h4 class="mb-3">
                   {{user.name.value}}
                 </h4>
-                <h6 class="mb-2">What do i do?
+                <h6 class="mb-2">{{ 'What do i do?'|t }}
                 </h6>
                 <p class="text-secondary mb-3">
                   {{content.field_user_description[0]}}
                 </p>
-                <button class="btn btn-primary mb-3">Follow</button>
-                <button class="btn btn-outline-primary mb-3">Message</button>
+                <div>
+                <a href="../my-projects" class="btn btn-outline-primary mb-3">{{ 'Follow on Linkedin'|t }}</a>
+                </div>
+                <div>
+                <a href="mailto:{{user.mail.value}}" class="btn btn-outline-primary mb-3">{{ 'Message'|t }}</a>
+                </div>
               </div>
             </div>
           </div>
@@ -52,7 +61,7 @@
           <div class="card-body">
             <div class="row">
               <div class="col-sm-3">
-                <h6>User Name</h6>
+                <h6>{{ 'User Name'|t }}</h6>
               </div>
               <div class="col-sm-9 text-secondary">
                 {{ user.name.0.value }}
@@ -61,7 +70,7 @@
             <hr>
             <div class="row">
               <div class="col-sm-3">
-                <h6>Email</h6>
+                <h6>{{ 'Email'|t }}</h6>
               </div>
               <div class="col-sm-9 text-secondary">
                 {{content.field_user_al[0]}}
@@ -70,7 +79,7 @@
             <hr>
             <div class="row">
               <div class="col-sm-3">
-                <h6>Phone</h6>
+                <h6>{{ 'Phone'|t }}</h6>
               </div>
               <div class="col-sm-9 text-secondary">
                 {{content.field_user_phone[0]}}
@@ -79,7 +88,7 @@
             <hr>
             <div class="row">
               <div class="col-sm-3">
-                <h6>User Reference</h6>
+                <h6>{{ 'User Reference'|t }}</h6>
               </div>
               <div class="col-sm-9 text-secondary">
                 {{content.field_user_reference[0]}}
@@ -88,7 +97,7 @@
             <hr>
             <div class="row">
               <div class="col-sm-3">
-                <h6>Address</h6>
+                <h6>{{ 'Address'|t }}</h6>
               </div>
               <div class="col-sm-9 text-secondary">
                 {{content.field_user_address[0]}}
@@ -99,4 +108,34 @@
       </div>
     </div>
   </div>
+<div class="contact-title">
+  <h2>{{ 'MY PROJECTS'|t }}</h2>
+  <div class="login-buttons-section">
+    <a class="login-buttons" href="../node/add/project">{{ 'ADD PROJECT'|t }}</a>
+  </div>
+    <div id="my-projects" >{{ drupal_view('my_projects', 'block_1') }}
+    </div>
+</div>
+<div class="contact-title">
+  <h2>{{ 'MY TEAM'|t }}</h2>
+    <div class="login-buttons-section">
+      <a class="login-buttons" href="../admin/people/create">{{ 'ADD TEAM MEMBER'|t }}</a>
+    </div>
+    <div>{{ drupal_view('my_team', 'block_1') }}
+    </div>
+</div>
+<div class="contact-title">
+  <h2>{{ 'MY TASKS'|t }}</h2>
+    <div class="login-buttons-section">
+     <a class="login-buttons" href="../node/add/tasks">{{ 'ADD TASK'|t }}</a>
+  </div>
+    <div id="my-tasks">{{ drupal_view('my_tasks', 'block_1') }}
+    </div>
+</div>
+<div class="contact-title">
+  <h2>{{ 'RECENT ACTIVITIES'|t }}</h2>
+    <div>{{ drupal_view('recent_activities', 'block_1') }}
+    </div>
+</div>
   {% endif %}
+  </article>
