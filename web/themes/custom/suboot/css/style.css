@@ -13,6 +13,18 @@
   color: #5846f9;
 }
 
+#navigation .navbar-nav li.nav-item a.nav-link.active {
+  background-color: #5846f9;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+}
+
+.text-center {
+  text-transform: capitalize;
+}
+
 .purplebg {
   background-color: #5846f9;
 }

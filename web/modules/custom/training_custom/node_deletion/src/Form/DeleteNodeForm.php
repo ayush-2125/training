@@ -12,7 +12,6 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class DeleteNodeForm extends FormBase {
 
-
   /**
    * {@inheritdoc}
    */
@@ -38,31 +37,31 @@ class DeleteNodeForm extends FormBase {
       '#type' => 'submit',
       '#value' => $this->t('Delete nodes in batches'),
     ];
-      return $form;
+    return $form;
   }
 
   /**
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-  $from_nid = $form_state->getValue('from_nid');
-  $to_nid = $form_state->getValue('to_nid');
-  $nids = \Drupal::entityQuery('node')
-              ->condition('type', 'article')
-              ->condition('nid', $from_nid, '>=')
-              ->condition('nid', $to_nid, '<=')
-              ->execute();
+    $from_nid = $form_state->getValue('from_nid');
+    $to_nid = $form_state->getValue('to_nid');
+    $nids = \Drupal::entityQuery('node')
+      ->condition('type', 'article')
+      ->condition('nid', $from_nid, '>=')
+      ->condition('nid', $to_nid, '<=')
+      ->execute();
 
-    $batch = array(
+    $batch = [
       'title' => t('Deleting Node...'),
-      'operations' => array(
-        array(
+      'operations' => [
+        [
           '\Drupal\node_deletion\DeleteNode::deleteNodeProcess',
-          array($nids)
-        ),
-      ),
+          [$nids],
+        ],
+      ],
       'finished' => '\Drupal\node_deletion\DeleteNode::deleteNodeProcessFinishedCallback',
-    );
+    ];
 
     batch_set($batch);
   }

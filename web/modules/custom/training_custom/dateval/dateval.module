@@ -1,7 +1,11 @@
 <?php
- 
+
+/**
+ * @file
+ */
+
 use Drupal\Core\Entity\EntityTypeInterface;
- 
+
 /**
  * Implements hook_entity_bundle_field_info_alter().
  */

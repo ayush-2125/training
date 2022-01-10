@@ -11,8 +11,8 @@
  */
 #}
 <div class="login-buttons-section">
-  <a class="login-buttons" href="/user/register">CREATE ACCOUNT</a>
-  <a class="login-buttons" href="/user/password">RESET PASSWORD</a>
+  <a class="login-buttons" href="/user/register">{{ 'CREATE ACCOUNT'|t }}</a>
+  <a class="login-buttons" href="/user/password">{{ 'RESET PASSWORD'|t }}</a>
 </div>
 <form{{ attributes }}>
 	<div class="container">
@@ -21,8 +21,8 @@
 				<div id="error_messages"></div>
  			 		{{ element.messages }}
 						<h2 class="login-form-heading">
-							Let's login.
-								<small>Provide the details below</small>
+							{{ 'Let\'s Login'|t }}
+								<small>{{ 'Provide the details below'|t }}</small>
 						</h2>
 				</div>
 					<div class="login-form-inner">

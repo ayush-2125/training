@@ -10,7 +10,7 @@ id: user.user.field_user_reference
 field_name: field_user_reference
 entity_type: user
 bundle: user
-label: 'User Reference'
+label: 'User reference'
 description: ''
 required: false
 translatable: false

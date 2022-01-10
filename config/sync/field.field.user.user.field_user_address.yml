@@ -11,7 +11,7 @@ id: user.user.field_user_address
 field_name: field_user_address
 entity_type: user
 bundle: user
-label: 'User Address'
+label: 'User address'
 description: ''
 required: false
 translatable: false

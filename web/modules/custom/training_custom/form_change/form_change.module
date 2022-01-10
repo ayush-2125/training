@@ -1,35 +1,72 @@
 <?php
 
+/**
+ * @file
+ * Functions for all modules.
+ */
+
 use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_form_alter().
  */
-
-function form_change_form_alter(&$form, FormStateInterface $form_state, $form_id){
-  if($form_id == 'node_project_form'){
-  $form['field_project_banner_caption']['widget']['0']['value']['#title'] = t('Bannner');
-  $form['testfield'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Test Checkbox'),
-  );
-  $form['firstbox'] = array(
-    '#title' => t('TECT WHEN THE CHECKBOX IS CHECKED'),
-    '#type' => 'textfield',
-    '#states' => array(
-      'visible' => array(
-        ':input[name="testfield"]' => array('checked' => TRUE),
-      ),
-    ),
-  );
-  $form['display2'] = array(
-    '#title' => t('TECT WHEN THE CHECKBOX IS UNCHECKED!!!!!!!!!!'),
-    '#type' => 'textfield',
-    '#states' => array(
-      'visible' => array(
-        ':input[id="edit-testfield"]' => array('checked' => TRUE),
-      ),
-    ),
-  );
+function form_change_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'node_project_form') {
+    $form['field_project_banner_caption']['widget']['0']['value']['#title'] = t('Bannner');
+    $form['testfield'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Test Checkbox'),
+    ];
+    $form['firstbox'] = [
+      '#title' => t('TECT WHEN THE CHECKBOX IS CHECKED'),
+      '#type' => 'textfield',
+      '#states' => [
+        'visible' => [
+          ':input[name="testfield"]' => ['checked' => TRUE],
+        ],
+      ],
+    ];
+    $form['display2'] = [
+      '#title' => t('TECT WHEN THE CHECKBOX IS UNCHECKED!!!!!!!!!!'),
+      '#type' => 'textfield',
+      '#states' => [
+        'visible' => [
+          ':input[id="edit-testfield"]' => ['checked' => TRUE],
+        ],
+      ],
+    ];
   }
 }
+
+/**
+ * Alterating User registration form
+ * -- Adding roles to user registration form.
+ * -- Changing Button Text of user registration form.
+ */
+function form_change_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+  if (strpos($_SERVER['REQUEST_URI'], "/user/register") !== FALSE) {
+    if ($form_id == 'user_register_form') {
+      $form['account']['roles']['#access'] = TRUE;
+      $form['actions']['submit']['#value'] = t('Register');
+      $form['account']['roles']['#type'] = 'select';
+
+      foreach ($form['account']['roles']['#options'] as $key => $value) {
+        if ($value == 'Administrator') {
+          unset($form['account']['roles']['#options'][$key]);
+        }
+        if ($value == 'Authenticated user') {
+          unset($form['account']['roles']['#options'][$key]);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * END of User registration form and Removing Roles Tab from menu.
+ */
+function form_change_menu_local_tasks_alter(&$data, $route_name) {
+  unset($data['tabs'][0]['role_delegation.edit_form']);
+}
+
+// END of Removing Roles Tab from menu.

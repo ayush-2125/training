@@ -1,7 +1,12 @@
 <?php
+
+/**
+ * @file
+ */
+
 /**
  * Implements hook_cronapi().
  */
 function node_deletion_cron() {
-\Drupal::logger('node_deletion')->notice('Cron Ran.');
+  \Drupal::logger('node_deletion')->notice('Cron Ran.');
 }

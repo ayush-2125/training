@@ -16,20 +16,3 @@ function suboot_theme($existing, $type, $theme, $path) {
 }
 
 // --END OF USER FORM SUGGESTION
-
-
-function suboot_form_user_register_form_alter(&$form, &$form_state, $form_id) {
-  if ( $form_id == 'user_register_form') {
-  	$form['account']['roles']['#access'] = TRUE;
-    // $form['account']['roles']['#type'] = 'select';
-
-  foreach ($form['account']['roles']['#options'] as $key => $value) {
-		if($value == 'Administrator') {
-		  unset($form['account']['roles']['#options'][$key]);
-		}
-    	if($value == 'Authenticated user') {
-		  unset($form['account']['roles']['#options'][$key]);
-		}
-	  }
-  }
-}

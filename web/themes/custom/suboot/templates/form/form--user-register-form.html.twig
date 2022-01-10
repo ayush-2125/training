@@ -11,8 +11,8 @@
  */
 #}
 <div class="login-buttons-section">
-  <a class="login-buttons" href="/user/login">LOGIN ACCCOUNT</a>
-  <a class="login-buttons" href="/user/password">RESET PASSWORD</a>
+  <a class="login-buttons" href="/user/login">{{ 'LOGIN ACCOUNT'|t }}</a>
+  <a class="login-buttons" href="/user/password">{{ 'RESET PASSWORD'|t }}</a>
 </div>
 <form{{ attributes }}>
   <form class="container">
@@ -22,28 +22,29 @@
         {{ element.messages }}
         </div>
 			  <h2 class="login-form-heading">
-				  Let's login.
-				  <small>Provide the details below</small>
+				  {{ 'Create Account'|t }}
+						<small>{{ 'Provide the details below'|t }}</small>
 			  </h2>
 		  </div>
 		<div class="login-form-inner">
 			<div>
         {{ element.account.name }}
 			</div>
-			<div>
-        {{ element.account.mail }}
+			<div class="row">
+				<div class="col-6">
+        	{{ element.account.mail }}
+				</div>
+      	<div class="col-6">
+        	{{ element.field_user_al }}
+				</div>
 			</div>
 			<div class="row">
-      <div class="col-6">
-        {{ element.field_user_al }}
-			</div>
-      <div class="col-6">
-        {{ element.field_user_gender }}
-			</div>
-			</div>
-      <div>
-        {{ element.field_user_phone }}
-			</div>
+      	<div class="col-6">
+        	{{ element.field_user_gender }}
+				</div>
+      	<div class="col-6">
+        	{{ element.field_user_phone }}
+				</div>
 			<div>
         {{ element.account.roles }}
 			</div>

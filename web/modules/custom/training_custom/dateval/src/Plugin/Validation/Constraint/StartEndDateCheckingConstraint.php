@@ -1,9 +1,9 @@
 <?php
- 
+
 namespace Drupal\dateval\Plugin\Validation\Constraint;
- 
+
 use Symfony\Component\Validator\Constraint;
- 
+
 /**
  * Checks if "End Date" not empty.
  *
@@ -16,7 +16,9 @@ use Symfony\Component\Validator\Constraint;
  * )
  */
 class StartEndDateCheckingConstraint extends Constraint {
- 
+  /**
+   * Error Message.
+   */
   public $message = '"End Date" may not be less than "Start Date".';
- 
+
 }

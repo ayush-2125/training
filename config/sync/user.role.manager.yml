@@ -2,7 +2,15 @@ uuid: d0577e32-6cb5-436e-b952-8bdf04fc318e
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.article
+    - node.type.front_page
+    - node.type.page
+    - node.type.project
+    - node.type.tasks
   module:
+    - comment
+    - node
     - role_delegation
     - toolbar
 id: manager
@@ -15,4 +23,26 @@ permissions:
   - 'administer users'
   - 'assign client role'
   - 'assign developer role'
+  - 'create project content'
+  - 'create tasks content'
+  - 'delete any project content'
+  - 'delete any tasks content'
+  - 'delete own article content'
+  - 'delete own front_page content'
+  - 'delete own page content'
+  - 'delete own project content'
+  - 'delete own tasks content'
+  - 'delete project revisions'
+  - 'delete tasks revisions'
+  - 'edit any article content'
+  - 'edit any front_page content'
+  - 'edit any page content'
+  - 'edit any project content'
+  - 'edit any tasks content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own front_page content'
+  - 'edit own page content'
+  - 'edit own project content'
+  - 'edit own tasks content'
   - 'view user email addresses'
