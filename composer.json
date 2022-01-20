@@ -31,18 +31,23 @@
         "composer/installers": "^1.9",
         "drupal/address": "^1.9",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/better_exposed_filters": "^5.0",
         "drupal/bootstrap": "^3.23",
         "drupal/bootstrap5": "^1.1",
+        "drupal/calendar": "^1.0@alpha",
         "drupal/config_split": "^1.7",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drupal/devel": "^4.1",
+        "drupal/easy_breadcrumb": "^2.0",
         "drupal/entity_export_csv": "^1.0@beta",
+        "drupal/facets": "^2.0",
         "drupal/feeds": "^3.0@alpha",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/role_delegation": "^1.1",
+        "drupal/search_api": "^1.21",
         "drupal/twig_tweak": "^3.1",
         "drupal/twig_vardumper": "^3.0",
         "drupal/ultimate_cron": "^2.0@alpha",
@@ -53,7 +58,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true

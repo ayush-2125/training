@@ -17,7 +17,7 @@
 *
 * @ingroup themeable
 */
-#}{{dump()}}
+#}
 {% set roles = user.getroles(TRUE) %}
 <article{{ attributes }}>
 {% set url = url('<current>') %}
@@ -26,7 +26,7 @@
 <h2>{{'My Account'|t}} </h2>
      <a href="#my-projects" class='btn btn-outline-primary'>{{ 'My Projects'|t }}</a>
   <a href="#my-tasks" class='btn btn-outline-primary ml-3'>{{'My Tasks'|t}}</a>
-  </div>
+</div>
   <div class="container">
     <div class="row gutters-sm">
       <div class="col-md-4 mb-3">
@@ -45,9 +45,6 @@
                 <p class="text-secondary mb-3">
                   {{content.field_user_description[0]}}
                 </p>
-                <div>
-                <a href="../my-projects" class="btn btn-outline-primary mb-3">{{ 'Follow on Linkedin'|t }}</a>
-                </div>
                 <div>
                 <a href="mailto:{{user.mail.value}}" class="btn btn-outline-primary mb-3">{{ 'Message'|t }}</a>
                 </div>
@@ -73,10 +70,11 @@
                 <h6>{{ 'Email'|t }}</h6>
               </div>
               <div class="col-sm-9 text-secondary">
-                {{content.field_user_al[0]}}
+                {{user.mail.0.value}}
               </div>
             </div>
-            <hr>
+           {% if content.field_user_phone[0] is not null and content.field_user_phone[0] is not empty %}
+           <hr>
             <div class="row">
               <div class="col-sm-3">
                 <h6>{{ 'Phone'|t }}</h6>
@@ -86,6 +84,8 @@
               </div>
             </div>
             <hr>
+            {% endif %}
+            {% if content.field_user_reference[0] is not null and content.field_user_reference[0] is not empty %}
             <div class="row">
               <div class="col-sm-3">
                 <h6>{{ 'User Reference'|t }}</h6>
@@ -95,6 +95,8 @@
               </div>
             </div>
             <hr>
+            {% endif %}
+            {% if content.field_user_address[0] is not null and content.field_user_address[0] is not empty %}
             <div class="row">
               <div class="col-sm-3">
                 <h6>{{ 'Address'|t }}</h6>
@@ -103,39 +105,53 @@
                 {{content.field_user_address[0]}}
               </div>
             </div>
+            {% endif %}
           </div>
         </div>
       </div>
     </div>
   </div>
-<div class="contact-title">
-  <h2>{{ 'MY PROJECTS'|t }}</h2>
-  <div class="login-buttons-section">
-    <a class="login-buttons" href="../node/add/project">{{ 'ADD PROJECT'|t }}</a>
+<div class="my-account-sections mt-3">
+  <div class="title-text-underline">
+    <h2>{{ 'Recent Activities'|t }}</h2>
+      <div>{{ drupal_view('recent_activities', 'block_1') }}
+      </div>
   </div>
-    <div id="my-projects" >{{ drupal_view('my_projects', 'block_1') }}
-    </div>
 </div>
-<div class="contact-title">
-  <h2>{{ 'MY TEAM'|t }}</h2>
-    <div class="login-buttons-section">
-      <a class="login-buttons" href="../admin/people/create">{{ 'ADD TEAM MEMBER'|t }}</a>
-    </div>
-    <div>{{ drupal_view('my_team', 'block_1') }}
-    </div>
-</div>
-<div class="contact-title">
-  <h2>{{ 'MY TASKS'|t }}</h2>
-    <div class="login-buttons-section">
-     <a class="login-buttons" href="../node/add/tasks">{{ 'ADD TASK'|t }}</a>
-  </div>
+<div class="my-account-sections mt-3">
+  <div class="title-text-underline">
+    <h2>{{ 'My Tasks'|t }}</h2>
     <div id="my-tasks">{{ drupal_view('my_tasks', 'block_1') }}
     </div>
+  </div>
 </div>
-<div class="contact-title">
-  <h2>{{ 'RECENT ACTIVITIES'|t }}</h2>
-    <div>{{ drupal_view('recent_activities', 'block_1') }}
+<div id="project-team" class="my-account-sections">
+  <div class="row mt-3">
+    <div class="col-sm-12 col-md-6 mt-3">
+      <div class="title-text-underline">
+        <h2>{{ 'My Projects'|t }}</h2>
+        </div>
+        <div id="my-projects" >{{ drupal_view('my_projects', 'block_1') }}
+        </div>
+        {% if 'manager' in user.getroles(TRUE)  %}
+        <div class="add-button-section">
+        <a href="../node/add/project" class="add-button-link"><i class="fa fa-plus-circle"></i></a>
+        </div>
+        {% endif %}
+      </div>
+      <div class="col-sm-12 col-md-6 mt-3 ">
+        <div class="title-text-underline">
+          <h2>{{ 'My Team'|t }}</h2>
+        </div>
+        <div id="my-team">{{ drupal_view('my_team', 'block_1') }}
+        </div>
+        {% if 'manager' in user.getroles(TRUE)  %}
+        <div class="add-button-section">
+        <a href="../admin/people/create" class="add-button-link"><i class="fa fa-plus-circle"></i></a>
+        </div>
+        {% endif %}
+      </div>
     </div>
 </div>
-  {% endif %}
-  </article>
+{% endif %}
+</article>

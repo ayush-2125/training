@@ -18,7 +18,7 @@ dependencies:
     - filter
     - node
     - path
-    - search
+    - search_api
     - system
     - taxonomy
     - toolbar
@@ -39,7 +39,7 @@ permissions:
   - 'administer menu'
   - 'administer modules'
   - 'administer nodes'
-  - 'administer search'
+  - 'administer search_api'
   - 'administer site configuration'
   - 'administer software updates'
   - 'administer taxonomy'

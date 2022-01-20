@@ -8,6 +8,7 @@ $task_column_linkcolor : #59687f;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .h4, h4 {
 font-weight: 600 !important;
@@ -17,6 +18,7 @@ a:hover {
   color: #5846f9;
 }
 }
+
 
 #navigation .navbar-nav li.nav-item a.nav-link.active{
   background-color: #5846f9;
@@ -41,6 +43,13 @@ a:hover {
   -o-object-fit: cover;
   object-fit: cover;
   padding: 15px 15px 15px 15px;
+  }
+}
+
+.views-field-title a {
+  text-decoration: none !important;
+  &:hover {
+    text-decoration: underline !important;
   }
 }
 
@@ -725,3 +734,127 @@ margin-left: 10px;
   letter-spacing: 1px;
 }
 
+// ADD BUTTON
+.my-account-sections{
+box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.add-button-section{
+  display: flex;
+  justify-content: flex-end;
+  right: 0;
+  bottom: 0;
+  padding-right: 20px;
+
+}
+
+
+.add-button-link {
+  display: inline-flex;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #5846f9;
+  width: 3rem;
+  height: 3rem;
+  transition: .5s linear;
+  position: relative;
+  z-index: 1;
+}
+
+.add-button-link:hover {
+  color: #fff;
+}
+
+.add-button-link i {
+  margin: auto;
+}
+.add-button-link::before {
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background: #5846f9;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
+}
+
+.add-button-link:hover::before {
+  transform: scale(1);
+}
+
+.title-text-underline {
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.title-text-underline h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.title-text-underline h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #5846f9;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.projects-view-title {
+  text-align: center;
+  padding-top: 2px;
+  text-transform: capitalize;
+  a {
+    text-decoration: none;
+  }
+}
+
+
+// PROJECT STYLING
+
+.project-view-project-title {
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 37px;
+}
+
+.project-view-labels h6{
+  margin: auto;
+  padding-top: 19px;
+}
+
+.project-view-description{
+font-family: 'Roboto', sans-serif ;
+font-weight: 300;
+font-size: 18px;
+}
+
+.project-view-details{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.project-search-form-button .btn , .btn-primary{
+  margin-top: 1rem;
+	font: inherit;
+	font-size: 1rem;
+	padding: 1em;
+  max-width: 100px;
+  max-height: 80px;
+	width: 100%;
+	font-weight: 500;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+	&:focus {
+		outline: 0;
+  }
+}
