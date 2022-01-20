@@ -17,7 +17,6 @@ dependencies:
     - media
     - node
     - paragraphs_type_permissions
-    - search
     - system
     - votingapi_reaction
 _core:
@@ -31,7 +30,6 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'create reaction on node:tasks:field_task_vote'
-  - 'search content'
   - 'use text format restricted_html'
   - 'view all media revisions'
   - 'view all revisions'

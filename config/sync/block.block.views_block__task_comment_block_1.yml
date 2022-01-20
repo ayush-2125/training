@@ -5,7 +5,6 @@ dependencies:
   config:
     - views.view.task_comment
   module:
-    - ctools
     - node
     - views
   theme:

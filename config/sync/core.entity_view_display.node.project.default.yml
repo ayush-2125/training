@@ -58,18 +58,19 @@ content:
     weight: 9
     region: content
   field_project_description:
-    type: text_default
-    label: above
-    settings: {  }
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
     third_party_settings: {  }
     weight: 11
     region: content
   field_project_end_date:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: html_date
     third_party_settings: {  }
     weight: 4
     region: content
@@ -93,16 +94,16 @@ content:
     region: content
   field_project_start_date:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: html_date
     third_party_settings: {  }
     weight: 3
     region: content
   field_project_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -115,3 +116,4 @@ content:
     region: content
 hidden:
   feeds_item: true
+  search_api_excerpt: true

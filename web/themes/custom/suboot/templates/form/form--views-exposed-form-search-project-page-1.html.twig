@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+<form{{ attributes }}>
+{{ element.search_api_fulltext }}
+<div class="row">
+  <div class="col-sm-12 col-md-6">
+    {{ element.field_project_start_date }}
+  </div>
+  <div class="col-sm-12 col-md-6">
+    {{ element.field_project_end_date }}
+  </div>
+</div>
+<div class="project-search-form-button">
+	{{ element.actions.submit }}
+</div>
+  {{ element.form_build_id }} {# required #}
+  {{ element.form_id }} {# required #}
+</form>
