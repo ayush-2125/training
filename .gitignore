@@ -8,6 +8,8 @@
 /web/libraries/
 /web/sites/*/files/
 /web/sites/simpletest
+/web/sites/default/settings.*
+/web/sites/default/services.*
 /.vscode/
 *.DS_Store
 .DS_Store

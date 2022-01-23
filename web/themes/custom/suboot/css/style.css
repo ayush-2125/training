@@ -874,3 +874,13 @@ html {
 .project-search-form-button .btn:focus, .btn-primary:focus {
   outline: 0;
 }
+
+.project-recievables-title {
+  text-align: center;
+}
+
+.project-recievables {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}

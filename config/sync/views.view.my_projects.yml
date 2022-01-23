@@ -3,14 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_project_description
-    - field.storage.node.field_project_end_date
-    - field.storage.node.field_project_start_date
     - node.type.project
   module:
-    - datetime
     - node
-    - text
     - user
 id: my_projects
 label: 'My Projects'
@@ -38,22 +33,40 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-          label: Title
+          label: ''
           exclude: false
           alter:
             alter_text: false
+            text: ''
             make_link: false
+            path: ''
             absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
             word_boundary: false
             ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
             strip_tags: false
             trim: false
+            preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: div
+          element_class: projects-view-title
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -75,199 +88,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_project_description:
-          id: field_project_description
-          table: node__field_project_description
-          field: field_project_description
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: 'Project Description'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_trimmed
-          settings:
-            trim_length: 200
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_project_start_date:
-          id: field_project_start_date
-          table: node__field_project_start_date
-          field: field_project_start_date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: 'Project Start Date'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: datetime_default
-          settings:
-            timezone_override: ''
-            format_type: html_date
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_project_end_date:
-          id: field_project_end_date
-          table: node__field_project_end_date
-          field: field_project_end_date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: 'Project End Date'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: datetime_default
-          settings:
-            timezone_override: ''
-            format_type: html_date
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           items_per_page: 5
@@ -276,6 +98,8 @@ display:
           tags:
             next: ››
             previous: ‹‹
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -284,6 +108,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -301,7 +126,20 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: '<h4 style="text-align:center;">No Projects available.</h4>'
+            format: full_html
+          tokenize: false
       sorts:
         created:
           id: created
@@ -381,52 +219,11 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: table
+        type: default
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          columns:
-            title: title
-            field_project_end_date: field_project_end_date
-            field_project_start_date: field_project_start_date
-            field_project_description: field_project_description
-          default: '-1'
-          info:
-            title:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_project_end_date:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_project_start_date:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_project_description:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          override: true
-          sticky: false
-          summary: ''
-          empty_table: false
-          caption: ''
-          description: ''
       row:
         type: fields
       query:
@@ -451,10 +248,7 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_project_description'
-        - 'config:field.storage.node.field_project_end_date'
-        - 'config:field.storage.node.field_project_start_date'
+      tags: {  }
   block_1:
     id: block_1
     display_title: Block
@@ -472,7 +266,4 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags:
-        - 'config:field.storage.node.field_project_description'
-        - 'config:field.storage.node.field_project_end_date'
-        - 'config:field.storage.node.field_project_start_date'
+      tags: {  }
