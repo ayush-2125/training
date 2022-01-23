@@ -70,6 +70,10 @@
  *   in different view modes.
  */
 #}
+<<<<<<< HEAD
+=======
+{{ dump() }}
+>>>>>>> 4e74c57 (TP-015: Modifying user section.)
 {%
   set classes = [
     'node',
@@ -151,8 +155,36 @@
               <p>{{ content.field_product_client[0] }} </p>
             </div>
           </div>
+          <hr>
+          <div class="row mt-3">
+            <div class="project-recievables-title my-3">
+              <h6> {{ 'Recievables'|t }} </h6>
+            </div>
+            <div class="project-recievables">
+              {{ content.field_project_recievables }}
+            </div>
+          </div>
         </div>
+    </div>
+    <div class="row">
+      <div class="contact-title">
+        <h2>{{ ' Gallery '|t }}</h2>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="project-banner">
+          {{ content.field_project_banner }}
+        </div>
+        <div class="project-banner-caption">
+          {{ content.field_project_banner_caption }}
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="project-recievables">
+          {# Empty #}
+        </div>
+      </div>
     </div>
   </div>
 </div>
+{{ content.field_project_gallery }}
 

@@ -4,6 +4,11 @@ status: true
 dependencies:
   config:
     - filter.format.full_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
     - node.type.article
     - node.type.front_page
     - node.type.page
@@ -14,14 +19,18 @@ dependencies:
     - comment
     - config
     - contact
+    - feeds
     - file
     - filter
+    - media
     - node
+    - paragraphs_type_permissions
     - path
     - search_api
     - system
     - taxonomy
     - toolbar
+    - votingapi_reaction
 id: developer
 label: Developer
 weight: 4
@@ -29,7 +38,9 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
+  - 'access feed overview'
   - 'access files overview'
+  - 'access media overview'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access taxonomy overview'
@@ -45,47 +56,100 @@ permissions:
   - 'administer taxonomy'
   - 'administer url aliases'
   - 'create article content'
+  - 'create audio media'
+  - 'create document media'
   - 'create front_page content'
+  - 'create image media'
+  - 'create media'
   - 'create page content'
+  - 'create paragraph content contact_layout'
+  - 'create paragraph content faq'
+  - 'create paragraph content front_page_3_blocks'
+  - 'create paragraph content left_image_block'
+  - 'create paragraph content top_section'
   - 'create project content'
+  - 'create reaction on node:tasks:field_task_vote'
+  - 'create remote_video media'
   - 'create tasks content'
   - 'create terms in tags'
-  - 'delete all revisions'
+  - 'create video media'
   - 'delete any article content'
+  - 'delete any audio media'
+  - 'delete any document media'
   - 'delete any front_page content'
+  - 'delete any image media'
   - 'delete any page content'
   - 'delete any project content'
+  - 'delete any remote_video media'
   - 'delete any tasks content'
+  - 'delete any video media'
   - 'delete article revisions'
+  - 'delete media'
   - 'delete own article content'
+  - 'delete own audio media'
+  - 'delete own document media'
   - 'delete own front_page content'
+  - 'delete own image media'
   - 'delete own page content'
   - 'delete own project content'
+  - 'delete own remote_video media'
   - 'delete own tasks content'
+  - 'delete own video media'
   - 'delete page revisions'
+  - 'delete paragraph content contact_layout'
+  - 'delete paragraph content faq'
+  - 'delete paragraph content front_page_3_blocks'
+  - 'delete paragraph content left_image_block'
+  - 'delete paragraph content top_section'
   - 'delete project revisions'
   - 'delete tasks revisions'
   - 'delete terms in tags'
   - 'edit any article content'
+  - 'edit any audio media'
+  - 'edit any document media'
   - 'edit any front_page content'
+  - 'edit any image media'
   - 'edit any page content'
   - 'edit any project content'
+  - 'edit any remote_video media'
   - 'edit any tasks content'
+  - 'edit any video media'
   - 'edit own article content'
+  - 'edit own audio media'
   - 'edit own comments'
+  - 'edit own document media'
   - 'edit own front_page content'
+  - 'edit own image media'
   - 'edit own page content'
   - 'edit own project content'
+  - 'edit own remote_video media'
   - 'edit own tasks content'
+  - 'edit own video media'
   - 'edit terms in tags'
   - 'export configuration'
   - 'import configuration'
-  - 'revert all revisions'
   - 'revert article revisions'
+  - 'revert front_page revisions'
   - 'revert page revisions'
+  - 'revert project revisions'
+  - 'revert tasks revisions'
   - 'synchronize configuration'
+  - 'update paragraph content contact_layout'
+  - 'update paragraph content faq'
+  - 'update paragraph content front_page_3_blocks'
+  - 'update paragraph content left_image_block'
+  - 'update paragraph content top_section'
+  - 'update project feeds'
+  - 'update user_csv feeds'
   - 'use text format full_html'
-  - 'view all revisions'
+  - 'view all media revisions'
   - 'view article revisions'
+  - 'view front_page revisions'
   - 'view page revisions'
+  - 'view paragraph content faq'
+  - 'view project feeds'
+  - 'view project revisions'
+  - 'view reactions on node:tasks:field_task_vote'
+  - 'view tasks revisions'
   - 'view the administration theme'
+  - 'view user_csv feeds'
